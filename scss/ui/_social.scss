@@ -1,0 +1,19 @@
+.social {
+  font-size: 24px;
+  color: #000000;
+  transition: .3s ease;
+  display: block;
+
+  &.--white {
+    color: white;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: #282A2C;
+    }
+    &.--white:hover {
+      color: #dadada;
+    }
+  }
+}

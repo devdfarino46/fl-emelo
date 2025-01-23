@@ -1,6 +1,7 @@
 .nav {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 
   &__link {
     font-weight: 400;
@@ -19,5 +20,10 @@
 
   &.--row {
     flex-direction: column;
+  }
+
+  @media (max-width: 540px) {
+    flex-direction: column;
+    text-align: left;
   }
 }
