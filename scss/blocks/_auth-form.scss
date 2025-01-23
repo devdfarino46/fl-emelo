@@ -1,0 +1,61 @@
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 17px;
+  background: #FFFFFF;
+  border: 1px solid #D0D0D0;
+  border-radius: 5px;
+  gap: 48px;
+
+  &__tabs {
+    display: flex;
+    gap: 8px;
+
+    .tab-btn {
+      flex: 1 0;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__register-note {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #747474;
+
+    a {
+      font-weight: inherit;
+      color: #0077FF;
+    }
+  }
+
+  &__socials-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+
+  &__socials-label {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #747474;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+.tab-btn {
+
+}

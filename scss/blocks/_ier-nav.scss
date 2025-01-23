@@ -1,0 +1,51 @@
+.ier-nav {
+  padding: 16px 0;
+  background: #F5F5F5;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 17px;
+  }
+
+  a {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #969696;
+    transition: .3s ease;
+
+    &:not(:last-child)::after {
+      content: '/';
+      margin-inline-start: 17px;
+      color: #969696;
+    }
+
+    &.--hidden {
+      @media (min-width: 741px) {
+        display: none;
+      }
+    }
+
+    &.--showed {
+      @media (max-width: 740px) {
+        display: none;
+      }
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: #282A2C;
+      }
+    }
+
+    @media (max-width: 740px) {
+      
+    }
+  }
+
+  a.--choosed {
+    color: #282A2C;
+  }
+}

@@ -50,9 +50,41 @@ const Ui = {
     });
   },
 
+  authFormInit: function () {
+    document.querySelectorAll('.auth-form').forEach((auth) => {
+      const authSection = auth.closest('.auth');
+      const register = document.querySelector('.register');
+      const tabBtns = auth.querySelectorAll('.auth-form__tabs .tab-btn');
+      const tabs = authSection.querySelectorAll('.register-info');
+      const ierNavLink = document.querySelector('.ier-nav a.--choosed');
+      const registerLink = auth.querySelector('._register-link');
+
+      registerLink.addEventListener('click', () => {
+        if (authSection) authSection.classList.add('--hidden');
+        if (register) register.classList.remove('--hidden');
+      });
+
+      tabBtns.forEach((tabBtn, i) => {
+        tabBtn.addEventListener('click', () => {
+          tabBtns.forEach((el) => {
+            el.classList.remove('--choosed');
+          });
+          tabs.forEach((el) => {
+            el.classList.remove('--choosed');
+          })
+
+          tabBtn.classList.add('--choosed');
+          if (tabs[i]) tabs[i].classList.add('--choosed');
+          if (ierNavLink) ierNavLink.textContent = tabBtn.querySelector('span._pc').textContent;
+        });
+      });
+    });
+  },
+
   init: function () {
     this.langSelectInit();
     this.menuInit();
+    this.authFormInit();
   }
 }
 Ui.init();

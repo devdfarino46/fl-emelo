@@ -43,5 +43,13 @@
     align-items: center;
     gap: 48px;
     margin-left: auto;
+
+    .btn {
+      min-width: 200px;
+
+      @media (max-width: 1140px) {
+        min-width: 120px;
+      }
+    }
   }
 }

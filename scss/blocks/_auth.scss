@@ -1,0 +1,42 @@
+.auth {
+  padding: 75px 0;
+
+  &.--hidden {
+    display: none;
+  }
+
+  @media (max-width: 940px) {
+    padding: 24px 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+    @media (max-width: 740px) {
+      flex-direction: column;
+      justify-content: unset;
+    }
+  }
+
+  .auth-form {
+    flex: 0 0 auto;
+
+    @media (max-width: 740px) {
+      flex: unset;
+    }
+  }
+
+  .register-info {
+    flex: 0 1 580px;
+    
+    &:not(.--choosed) {
+      display: none;
+    }
+
+    @media (max-width: 740px) {
+      flex: unset;
+    }
+  }
+}

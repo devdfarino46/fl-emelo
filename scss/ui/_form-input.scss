@@ -1,0 +1,29 @@
+.form-input {
+  display: flex;
+  background: #F6F6F6;
+  border-radius: 5px;
+  transition: .3s ease;
+
+  input {
+    flex: 1 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #282A2C;
+    min-width: 248px;
+    background: transparent;
+    padding: 10px;
+
+    &::placeholder {
+      color: #747474;
+      opacity: 1;
+      text-align: center;
+    }
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background: #E7E7E7;
+    }
+  }
+}
