@@ -1,0 +1,81 @@
+::-ms-reveal {
+  display: none;
+}
+
+html, body, html *, *, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+
+  main {
+    flex: 1;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: inherit;
+
+  &:disabled {
+    cursor: unset;
+  }
+}
+
+span, b {
+  color: inherit;
+  font: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+input, textarea {
+  outline: none;
+  border: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+[class *= "icon-"] {
+
+  &::before {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
