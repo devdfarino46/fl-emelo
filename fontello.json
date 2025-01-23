@@ -159,6 +159,20 @@
       "search": [
         "solar_globus-broken"
       ]
+    },
+    {
+      "uid": "8dbad68af92a29edca1dcbe21a8163e4",
+      "css": "ix_cancel",
+      "code": 59396,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M821.2 237.9L762 178.7 500 441.2 237.9 178.7 178.7 237.9 441.2 500 178.7 762.1 237.9 821.2 500 558.7 762 821.2 821.2 762.1 558.7 500 821.2 237.9Z",
+        "width": 1000
+      },
+      "search": [
+        "ix_cancel"
+      ]
     }
   ]
 }

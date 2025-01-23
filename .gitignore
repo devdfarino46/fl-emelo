@@ -5,8 +5,5 @@ js/**/*
 *.html
 !html/**/*.html
 fontello/**/*
-!fontello/config.json
 *.zip
 *.rar
-fl-result/
-.publish/

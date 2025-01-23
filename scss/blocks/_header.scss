@@ -1,3 +1,47 @@
 .header {
   background: #282A2C;
+  padding: 26px 0;
+
+  &__container {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+  }
+
+  .menu-btn {
+
+    @media (min-width: 941px) {
+      display: none;
+    }
+  }
+
+  .logo {
+    @media (max-width: 940px) {
+      display: none;
+    }
+  }
+
+  .nav {
+    @media (max-width: 940px) {
+      display: none;
+    }
+  }
+
+  .lang-select {
+    @media (max-width: 440px) {
+      display: none;
+    }
+
+    &__dropdown {
+      right: 0;
+      left: auto;
+    }
+  }
+
+  &__cta {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    margin-left: auto;
+  }
 }

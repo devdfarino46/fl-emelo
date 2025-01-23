@@ -1,0 +1,30 @@
+.menu {
+  padding: 24px 0;
+  background: #282A2C;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  min-width: 184px;
+  width: 100%;
+  max-width: 360px;
+  transition: .4s ease;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .lang-select {
+    @media (min-width: 441px) {
+      display: none;
+    }
+  }
+
+  &:not(.--active) {
+    pointer-events: none;
+    transform: translateX(-100%);
+  }
+}
