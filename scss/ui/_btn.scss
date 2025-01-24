@@ -59,4 +59,26 @@
       }
     }
   }
+
+  &.--tag {
+    padding: 10px;
+    background: #F5F5F5;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background: #E7E7E7;
+      }
+    }
+  }
+
+  &.--green {
+    background: #319F43;
+    color: white;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background: #51D567;
+      }
+    }
+  }
 }

@@ -1,0 +1,34 @@
+.company-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    .ava {
+      width: 24px;
+      height: 24px;
+      font-size: 24px;
+      color: #282A2C;
+      background: #D0D0D0;
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #282A2C;
+  }
+
+  &__country {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #969696;
+  }
+}

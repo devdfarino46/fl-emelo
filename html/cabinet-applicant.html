@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('blocks/_head.html')
+
+<body>
+  <div class="wrapper">
+
+    @@include('blocks/_header.html', {logged: true, has_profile_image: true})
+
+    @@include('blocks/_menu.html')
+
+    @@include('blocks/_ier-nav.html')
+
+    <main class="page page-cabinet-applicant">
+      <section class="cab-appnt">
+        <div class="cab-appnt__container">
+          <div class="cab-appnt__prob-cell">
+            <div class="prob-success-wrap">
+              <p class="prob-success-wrap__title">Мой шанс на успех</p>
+              <div class="progress">
+                <span><i></i></span>
+                <b>30%</b>
+              </div>
+              <button type="button" class="btn">
+                <span>Повысить шансы</span>
+              </button>
+            </div>
+            <div class="clue-block">
+              <i class="icon-ic_outline-tips-and-updates"></i>
+              <p>
+                Стоило бы дополнить данные про образование, 
+                определить желаемое место работы
+              </p>
+            </div>
+          </div>
+
+          <div class="cab-appnt__data-cell">
+            <div class="my-data">
+              <p class="my-data__title">Мои данные</p>
+              @@include('blocks/_ava.html', {has_profile_image: true})
+              <ul class="my-data__info">
+                <li>Иван Иванов</li>
+                <li><i class="icon-line-md_phone"></i> +7 000 000 00</li>
+                <li><i class="icon-ic_outline-email"></i> Example@example</li>
+                <li><i class="icon-solar_globus-broken"></i> Испания</li>
+              </ul>
+              <button type="button" class="btn">
+                <span>Редактировать</span>
+              </button>
+            </div>
+            <div class="my-all-data">
+              <ul>
+                <li>
+                  <p>
+                    <i class="icon-mdi_human-dolly"></i>
+                    Опыт работы
+                  </p>
+                  <p>12 лет общего стажа</p>
+                  <ul>
+                    <li>Coca-cola - 6 лет</li>
+                    <li>с 2019-2024</li>
+                    <li>Работал разносчиком</li>
+                  </ul>
+                  <ul>
+                    <li>Taxi - 6 лет</li>
+                    <li>с 2019-2024</li>
+                    <li>Работал таксистом</li>
+                  </ul>
+                </li>
+                
+                <li>
+                  <p>
+                    <i class="icon-mdi_human-male-board-poll"></i>
+                    Образование
+                  </p>
+                  <p>Среднее специальное</p>
+                  <ul>
+                    <li>Центральный заборостоительный колледж</li>
+                    <li>Год оеончания 2001</li>
+                  </ul>
+                  <ul>
+                    <li>Центральный заборостоительный колледж</li>
+                    <li>Год оеончания 2001</li>
+                  </ul>
+                </li>
+                
+                <li>
+                  <p>
+                    <i class="icon-mdi_human-karate"></i>
+                    Ключевые навыки
+                  </p>
+                  <p>Среднее специальное</p>
+                  <ul>
+                    <li>Находчивость</li>
+                  </ul>
+                  <ul>
+                    <li>Целеустремленность</li>
+                  </ul>
+                </li>
+                
+                <li>
+                  <p>
+                    <i class="icon-mdi_human-baby-changing-table"></i>
+                    Опыт работы с оборудованием
+                  </p>
+                  <p>Среднее специальное</p>
+                  <ul>
+                    <li>Починил сенокосилку</li>
+                  </ul>
+                  <ul>
+                    <li>Вожу автопогрузчик</li>
+                  </ul>
+                </li>
+                
+                <li>
+                  <p>
+                    <i class="icon-mdi_human-male-male"></i>
+                    Коммуникационные качества
+                  </p>
+                  <p>Среднее специальное</p>
+                  <ul>
+                    <li>Общительный</li>
+                  </ul>
+                  <ul>
+                    <li>Вежливый</li>
+                  </ul>
+                </li>
+              </ul>
+              <button type="button" class="btn">
+                <span>Создать и редактировать</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="cab-appnt__filters-cell">
+            <div class="search-loader">
+              <i class="icon-tabler_loader"></i>
+              <p>Поиск начат, ждите результатов</p>
+            </div>
+            <div class="status-tags">
+              <button type="button" class="btn --tag">
+                <span>Предложений - 1</span>
+              </button>
+              <button type="button" class="btn --tag">
+                <span>Приглашений - 2</span>
+              </button>
+              <button type="button" class="btn --tag">
+                <span>Просмотров - 3</span>
+              </button>
+            </div>
+
+            <div class="search-filters">
+              <div class="search-filters__title-wrap">
+                <p class="search-filters__title">Результаты поиска</p>
+                <button type="button" class="btn">
+                  <span>Уточнить</span>
+                </button>
+              </div>
+              <div class="search-filters__info-wrap">
+                <div class="search-filters__info">
+                  <p class="search-filters__info-title">Ищем</p>
+                  <div class="search-filters__info-tags">
+                    <button type="button" class="btn --tag">
+                      <span>Водитель</span>
+                    </button>
+                    <button type="button" class="btn --tag">
+                      <span>Сборщик мебели</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="search-filters__info">
+                  <p class="search-filters__info-title">Альтернативы</p>
+                  <div class="search-filters__info-tags">
+                    <button type="button" class="btn --tag">
+                      <span>Сборщик яблок</span>
+                    </button>
+                    <button type="button" class="btn --tag">
+                      <span>Сдуватель листьев</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cab-appnt__result-cell">
+            <div class="suggests">
+              <div class="card">
+                <div class="card__top">
+                  <p class="card__status">Отправлен</p>
+                  <p class="card__title">Водитель</p>
+                  <div class="card__info">
+                    <p class="card__price">5 000 - 20 000€</p>
+                    <p class="card__in-time">в неделю</p>
+                    <p class="tag"><span>Без опыта</span></p>
+                  </div>
+                </div>
+                <div class="company-item">
+                  <div class="company-item__top">
+                    @@include('blocks/_ava.html')
+                    <p class="company-item__title">IKEA Spain</p>
+                    <i class="icon-mingcute_certificate-fill certif-icon"></i>
+                  </div>
+                  <p class="company-item__country">Испания</p>
+                </div>
+                <p class="tag --green"><span>Отклик без резюме</span></p>
+                <div class="card__bottom">
+                  <button type="button" class="btn --green">
+                    <span>Предложение</span>
+                  </button>
+                  <p class="card__time">22.02.2024</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__top">
+                  <p class="card__status">Отправлен</p>
+                  <p class="card__title">Водитель</p>
+                  <div class="card__info">
+                    <p class="card__price">5 000 - 20 000€</p>
+                    <p class="card__in-time">в неделю</p>
+                    <p class="tag"><span>Без опыта</span></p>
+                  </div>
+                </div>
+                <div class="company-item">
+                  <div class="company-item__top">
+                    @@include('blocks/_ava.html')
+                    <p class="company-item__title">IKEA Spain</p>
+                    <i class="icon-mingcute_certificate-fill certif-icon"></i>
+                  </div>
+                  <p class="company-item__country">Испания</p>
+                </div>
+                <p class="tag --green"><span>Отклик без резюме</span></p>
+                <div class="card__bottom">
+                  <button type="button" class="btn --green">
+                    <span>На интервью</span>
+                  </button>
+                  <p class="card__time">22.02.2024</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="vacancies">
+              <p class="vacancies__title">Вот что нашли</p>
+              
+              @@for(let i = 0; i < 5; i++) {
+                <div class="card --vacancie">
+                  <div class="card__top">
+                    <p class="card__title">Водитель</p>
+                    <div class="card__info">
+                      <p class="card__price">5 000 - 20 000€</p>
+                      <p class="card__in-time">в неделю</p>
+                      <p class="tag"><span>Без опыта</span></p>
+                    </div>
+                  </div>
+                  <div class="company-item">
+                    <div class="company-item__top">
+                      @@include('blocks/_ava.html')
+                      <p class="company-item__title">IKEA Spain</p>
+                      <i class="icon-mingcute_certificate-fill certif-icon"></i>
+                    </div>
+                    <p class="company-item__country">Испания</p>
+                  </div>
+                  <p class="tag --green"><span>Отклик без резюме</span></p>
+                  <div class="card__bottom">
+                    <button type="button" class="btn">
+                      <span>Откликнуться</span>
+                    </button>
+                    <p class="card__time">22.02.2024</p>
+                  </div>
+                </div>
+              }
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('blocks/_footer.html')
+  </div>
+
+  @@include('blocks/_scripts.html')
+</body>
+
+</html>

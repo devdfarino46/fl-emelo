@@ -19,14 +19,14 @@
     <div class="header__cta">
       @@include('_lang-select.html')
 
+      @@if(!context.logged) {
       <button type="button" class="btn">
         <span>Войти</span>
       </button>
-      
-      <!-- <a href="#" class="ava">
-        -- If is ava -- <img src="img/avas/1.webp" alt="" width="48" height="48">
-        <i class="icon-carbon_no-image"></i>
-      </a> -->
+      }
+      @@if(context.logged) {
+        @@include('_ava.html')
+      }
     </div>
   </div>
 </header>

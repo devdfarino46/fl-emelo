@@ -29,17 +29,12 @@ function _whatching() {
 }
 
 function _html() {
-  const date = new Date();
-  const time = `${date.getFullYear()}.${date.getMonth() + 1}.${date.getDate()} ${date.getHours()}:${date.getMinutes()} (Minsk)`;
 
   return gulp.src(['html/*.html'])
     .pipe(fileInclude({
       prefix: '@@',
       basepath: '@file',
-      context: {
-        class: '',
-        versiontime: time,
-      }
+      context: require('./html-vars.js')
     }))
     .pipe(gulp.dest('.'))
     .pipe(browserSync.stream());

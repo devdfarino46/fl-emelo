@@ -6,7 +6,7 @@
 <body>
   <div class="wrapper">
 
-    @@include('blocks/_header.html')
+    @@include('blocks/_header.html', {logged: true, has_profile_image: true})
 
     @@include('blocks/_menu.html')
 
@@ -23,15 +23,15 @@
             <ul class="acc-skills-block__list">
               <li class="acc-skills-block__item">
                 <p class="acc-skills-block__item-label">Для профессиональных областей</p>
-                <ul class="acc-skills-block__sublist">
-                  <li class="acc-skills-block__subitem">Управление транспортом</li>
+                <ul class="acc-skills-block__tags">
+                  <button type="button" class="btn --tag"><span>Управление транспортом</span></button>
                 </ul>
               </li>
               <li class="acc-skills-block__item">
                 <p class="acc-skills-block__item-label">Для профессий</p>
-                <ul class="acc-skills-block__sublist">
-                  <li class="acc-skills-block__subitem">Водитель</li>
-                  <li class="acc-skills-block__subitem">Крановщик</li>
+                <ul class="acc-skills-block__tags">
+                  <button type="button" class="btn --tag"><span>Водитель</span></button>
+                  <button type="button" class="btn --tag"><span>Крановщик</span></button>
                 </ul>
               </li>
             </ul>
