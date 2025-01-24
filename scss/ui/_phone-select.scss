@@ -1,0 +1,44 @@
+.phone-select {
+  position: relative;
+
+  &__dropdown {
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+    border-radius: 5px;
+    transition: .4s ease;
+    transform-origin: top;
+    position: absolute;
+    z-index: 999;
+    top: calc(100% + 5px);
+    right: 0;
+    width: 318px;
+  }
+  &:not(.--opened) &__dropdown {
+    pointer-events: none;
+    opacity: 0;
+    transform: scaleY(0);
+  }
+
+  &.--opened .form-input button i {
+    transform: scaleY(-1);
+  }
+
+  &__item {
+    display: flex;
+    padding: 6px 10px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #D0D0D0;
+    transition: .3s ease;
+    cursor: pointer;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background: #F6F6F6;
+      }
+    }
+  }
+}

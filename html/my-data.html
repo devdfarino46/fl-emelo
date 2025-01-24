@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('blocks/_head.html')
+
+<body>
+  <div class="wrapper">
+
+    @@include('blocks/_header.html')
+
+    @@include('blocks/_menu.html')
+
+    @@include('blocks/_ier-nav.html')
+
+    <main class="page page-auth">
+      <section class="my-data">
+        <div class="my-data__container">
+          <form action="#" class="my-data__form">
+            <div class="ava-upload">
+              <input type="file" accept=".jpg, .jpeg, .png, .webp">
+              <div class="ava-upload__image">
+                <i class="icon-material-symbols_download-sharp"></i>
+                <img src="img/avas/2.webp" alt="" width="200" height="175">
+              </div>
+              <div class="ava-upload__btns">
+                <button type="button" class="ava-upload__img-btn btn --shadow-white">
+                  <span>Загрузить</span>
+                </button>
+                <button type="button" class="ava-upload__camera-btn btn --black">
+                  <i class="icon-pepicons-pencil_camera"></i>
+                  <span>Снять</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="my-data__inputs-wrap">
+
+              <div class="my-data__inputs-row">
+                @@include('blocks/_date-select.html')
+
+                <div class="form-input">
+                  <input type="text" placeholder="Петров">
+                </div>
+
+                <div class="form-input">
+                  <input type="text" placeholder="Иван">
+                </div>
+              </div>
+              
+              <div class="my-data__inputs-row">
+                <div class="phone-select">
+                  <div class="form-input">
+                    <button type="button" aria-label="Выбрать код страны">
+                      <input type="text" value="+7">
+                      <i class="icon-ic_round-arrow-drop-down"></i>
+                      <span>+7</span>
+                    </button>
+                    <input type="number" placeholder="999 999 9999">
+                  </div>
+                  <ul class="phone-select__dropdown">
+                    <li class="phone-select__item">+7</li>
+                    <li class="phone-select__item">+3</li>
+                    <li class="phone-select__item">+12</li>
+                    <li class="phone-select__item">+12</li>
+                    <li class="phone-select__item">+12</li>
+                    <li class="phone-select__item">+12</li>
+                    <li class="phone-select__item">+12</li>
+                    <li class="phone-select__item">+12</li>
+                    <li class="phone-select__item">+12</li>
+                  </ul>
+                </div>
+
+                <div class="form-input">
+                  <input type="email" placeholder="E-mail">
+                </div>
+              </div>
+              
+              <div class="my-data__inputs-row">
+                <div class="country-select">
+                  <div class="form-input">
+                    <button type="button" aria-label="Выбрать регион">
+                      <i class="icon-ic_round-arrow-drop-down"></i>
+                    </button>
+                    <input type="text" placeholder="Регион" readonly>
+                  </div>
+                  <ul class="country-select__dropdown">
+                    <li class="country-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Санкт-Петербург</span>
+                    </li>
+                    <li class="country-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Москва</span>
+                    </li>
+                    <li class="country-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Казань</span>
+                    </li>
+                    <li class="country-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Новосибирск</span>
+                    </li>
+                    <li class="country-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Екатеринбург</span>
+                    </li>
+                    <li class="country-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Сочи</span>
+                    </li>
+                    <li class="country-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Владивосток</span>
+                    </li>
+                    <li class="country-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Краснодар</span>
+                    </li>
+                  </ul>
+                </div>
+  
+                <div class="country-select">
+                  <div class="form-input">
+                    <button type="button" aria-label="Выбрать страну">
+                      <i class="icon-ic_round-arrow-drop-down"></i>
+                    </button>
+                    <input type="text" placeholder="Страна" readonly>
+                  </div>
+                  <ul class="country-select__dropdown">
+                    <li class="country-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Соединеные штаты Америки</span>
+                    </li>
+                    <li class="country-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Испания</span>
+                    </li>
+                    <li class="country-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Франция</span>
+                    </li>
+                    <li class="country-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Италия</span>
+                    </li>
+                    <li class="country-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Албания</span>
+                    </li>
+                    <li class="country-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Казахстан</span>
+                    </li>
+                    <li class="country-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Чехия</span>
+                    </li>
+                    <li class="country-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Польша</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <button type="submit" class="my-data__submit btn">
+                <span>Сохранить</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    @@include('blocks/_footer.html')
+  </div>
+
+  @@include('blocks/_scripts.html')
+</body>
+
+</html>

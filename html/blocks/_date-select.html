@@ -1,0 +1,49 @@
+<div class="date-select">
+  <div class="form-input">
+    <button type="button" aria-label="Выбрать дату">
+      <i class="icon-ic_round-arrow-drop-down"></i>
+    </button>
+    <input type="text" placeholder="Мг" readonly>
+  </div>
+  <div class="date-select__dropdown">
+    <div class="date-select__dropdown-tabs">
+      <button type="button" class="tab-btn --choosed">
+        <span>Дата</span>
+      </button>
+      <button type="button" class="tab-btn">
+        <span>Месяц</span>
+      </button>
+      <button type="button" class="tab-btn">
+        <span>Год</span>
+      </button>
+    </div>
+    <ul class="date-select__list --choosed">
+      @@for (let i = 31; i > 0; i--) {
+      <li class="date-select__item" data-value="`+i+`" data-category="day">`+i+`</li>
+      }
+    </ul>
+    <ul class="date-select__list">
+      <li class="date-select__item" data-value="01" data-category="month">Январь</li>
+      <li class="date-select__item" data-value="02" data-category="month">Февраль</li>
+      <li class="date-select__item" data-value="03" data-category="month">Март</li>
+      <li class="date-select__item" data-value="04" data-category="month">Апрель</li>
+      <li class="date-select__item" data-value="05" data-category="month">Май</li>
+      <li class="date-select__item" data-value="06" data-category="month">Июнь</li>
+      <li class="date-select__item" data-value="07" data-category="month">Июль</li>
+      <li class="date-select__item" data-value="08" data-category="month">Август</li>
+      <li class="date-select__item" data-value="09" data-category="month">Сентябрь</li>
+      <li class="date-select__item" data-value="10" data-category="month">Октябрь</li>
+      <li class="date-select__item" data-value="11" data-category="month">Ноябрь</li>
+      <li class="date-select__item" data-value="12" data-category="month">Декабрь</li>
+    </ul>
+    <ul class="date-select__list">
+      @@for (let i = 2024; i > 1920; i--) {
+      <li class="date-select__item" data-value="`+i+`" data-category="year">`+i+`</li>
+      }
+    </ul>
+
+    <button type="button" class="date-select__accept-btn btn">
+      <span>Применить</span>
+    </button>
+  </div>
+</div>
