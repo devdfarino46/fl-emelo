@@ -28,13 +28,22 @@
   }
 
   .lang-select {
-    @media (max-width: 440px) {
-      display: none;
-    }
 
     &__dropdown {
       right: 0;
       left: auto;
+    }
+
+    @media (max-width: 440px) {
+      display: none;
+    }
+
+    @media (max-width: 540px) {
+
+      &__dropdown {
+        right: -100px;
+        left: auto;
+      }
     }
   }
 

@@ -46,4 +46,17 @@
       }
     }
   }
+
+  &.--back-page {
+    padding: 10px 24px;
+    background: #F5F5F5;
+    border-radius: 10px;
+    color: #000000;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background: #E7E7E7;
+      }
+    }
+  }
 }

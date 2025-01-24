@@ -243,6 +243,20 @@
       "search": [
         "bi_geo"
       ]
+    },
+    {
+      "uid": "3c0eb079a54ed6f89ce33914ea02d95e",
+      "css": "weui_back-filled",
+      "code": 59409,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M139.3 500L433.9 794.6 375 853.5 50.9 529.5C43.1 521.6 38.7 511.1 38.7 500 38.7 489 43.1 478.4 50.9 470.5L375 146.5 433.9 205.4 139.3 500Z",
+        "width": 500
+      },
+      "search": [
+        "weui_back-filled"
+      ]
     }
   ]
 }

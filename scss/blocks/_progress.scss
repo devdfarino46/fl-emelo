@@ -1,0 +1,35 @@
+.progress {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  gap: 15px;
+
+  span {
+    position: relative;
+    display: block;
+    flex: 1 0;
+    background: #E7E7E7;
+    border-radius: 12px;
+    height: 12px;
+
+    i {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 30%;
+      background: linear-gradient(137.29deg, #319F43 11.14%, #00530E 96.15%);
+      border-radius: 12px;
+    }
+  }
+
+  b {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: block;
+    color: #969696;
+    padding: 0 .8em;
+  }
+}

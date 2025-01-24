@@ -1,0 +1,17 @@
+.acc-assess-section {
+  padding: 75px 0;
+
+  @media (max-width: 940px) {
+    padding: 48px 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    .btn:first-child {
+      width: max-content;
+    }
+  }
+}
