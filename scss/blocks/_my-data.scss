@@ -1,38 +1,64 @@
 .my-data {
-  display: flex;
-  flex-direction: column;
-  padding: 26px 29px;
-  gap: 24px;
-  background: #FFFFFF;
-  border: 1px solid #D0D0D0;
-  border-radius: 5px;
+  padding: 75px 0;
 
-  &__title {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    color: #000000;
+  @media (max-width: 940px) {
+    padding: 48px 0;
   }
-  
 
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
 
-  &__info {
+  .ava-upload {
+    @media (max-width: 940px) {
+      align-self: center;
+    }
+  }
+
+  &__form {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+
+    @media (max-width: 940px) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  &__inputs-wrap {
+    flex: 1 0;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 24px;
+  }
 
-    li {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 19px;
-      color: #808080;
-      gap: 8px;
-      display: flex;
-      align-items: center;
+  &__inputs-row {
+    display: flex;
+    gap: 24px;
 
-      i {
-        font-size: 24px;
+    .form-input, .phone-select, .country-select {
+      flex: 1 0;
+    }
+
+    @media (min-width: 741px) {
+      &:nth-child(1) {
+        .date-select {
+          flex: 0 0 200px;
+        }
       }
     }
+
+    @media (max-width: 740px) {
+      flex-direction: column;
+    }
+  }
+
+  &__submit {
+    width: 200px;
+    align-self: flex-end;
   }
 }
