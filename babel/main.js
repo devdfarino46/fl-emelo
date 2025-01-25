@@ -229,6 +229,27 @@ const Ui = {
     })
   },
 
+  reviewsInit: function () {
+    document.querySelectorAll('.reviews').forEach(reviews => {
+      const slider = reviews.querySelector('.reviews__slider');
+
+      const swiper = new Swiper(slider, {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        speed: 1000,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: reviews.querySelector('.reviews__pagination'),
+          clickable: true,
+        }
+      });
+    });
+  },
+
   init: function () {
     this.langSelectInit();
     this.menuInit();
@@ -237,6 +258,7 @@ const Ui = {
     this.dateSelectInit();
     this.phoneSelectInit();
     this.countrySelectInit();
+    this.reviewsInit();
   }
 }
 Ui.init();

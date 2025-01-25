@@ -397,6 +397,20 @@
       "search": [
         "tabler_loader"
       ]
+    },
+    {
+      "uid": "a3702b8e1631e9a857d5f73b9501e749",
+      "css": "material-symbols_star",
+      "code": 59420,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M242.7 875L310.4 582.3 83.3 385.4 383.3 359.4 500 83.3 616.7 359.4 916.7 385.4 689.6 582.3 757.3 875 500 719.8 242.7 875Z",
+        "width": 1000
+      },
+      "search": [
+        "material-symbols_star"
+      ]
     }
   ]
 }
