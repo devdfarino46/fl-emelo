@@ -1,0 +1,41 @@
+.company-item-site {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  .ava {
+    color: #282A2C;
+    background: #D0D0D0;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #969696;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  &__site {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0077FF;
+    transition: .3s ease;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: #0052af;
+      }
+    }
+  }
+}
