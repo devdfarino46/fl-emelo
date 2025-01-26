@@ -18,4 +18,18 @@
     text-align: center;
     color: #969696;
   }
+
+  @media (max-width: 740px) {
+    &.--allow-hide-740w {
+      cursor: pointer;
+
+      &:not(.--opened) {
+        width: max-content;
+  
+        p {
+          display: none;
+        }
+      }
+    }
+  }
 }

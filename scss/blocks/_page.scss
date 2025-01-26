@@ -1,0 +1,19 @@
+.page-interview {
+  .container:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.page-vacancie {
+  .container:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}

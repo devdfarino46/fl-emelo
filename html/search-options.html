@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('blocks/_head.html')
+
+<body>
+  <div class="wrapper">
+
+    @@include('blocks/_header.html')
+
+    @@include('blocks/_menu.html')
+
+    @@include('blocks/_ier-nav.html')
+
+    <main class="page page-search-options generation">
+      <div class="generation__container">
+        <div class="generation__left">
+          <div class="info-status-block">
+            <p class="info-status-block__label">Статус</p>
+            <div class="info-status-block__content">
+              <p class="info-status-block__tag">Черновик</p>
+              <button class="info-status-block__btn btn">
+                <span>Опубликовать</span>
+              </button>
+              <div class="prob-success">
+                <p class="prob-success__title">Оценка профиля</p>
+                <p class="progress">
+                  <span><i></i></span>
+                  <b>30%</b>
+                </p>
+                <p class="prob-success__status">Неплохо</p>
+              </div>
+              <p class="info-status-block__clue">
+                Стоило бы дополнить данные про образование, рассказать про 
+                опыт в похожей сфере. <br>
+                И так еще много разных очень полезных советов, нужных 
+                чтобы заполнить пустующее пространство
+              </p>
+            </div>
+          </div>
+
+          <div class="filters-list">
+            <p class="filters-list__label">
+              Параметры, которые используются при поиске вакансий.
+            </p>
+
+            <ul class="filter-list__list">
+              <li class="filter-list__item filter-radios">
+                <p class="filter-radios__label">
+                  <i class="icon-clarity_employee-solid"></i>
+                  Вид трудоустройства
+                </p>
+                <ul class="filter-radios__list">
+                  <li class="--choosed"><b></b> Полная ставка</li>
+                  <li><b></b> Не полная ставка</li>
+                  <li><b></b> По временному договору</li>
+                  <li><b></b> Фриланс/Временная занятость</li>
+                  <li><b></b> Стажировка</li>
+                  <li><b></b> Совместительство</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="generation__main">
+          <div class="generation__clue-wrapper">
+            <div class="clue-block --allow-hide-740w">
+              <i class="icon-ic_outline-tips-and-updates"></i>
+              <p>
+                Давайте начнем. Вы можете заполнить данные, просто надиктовав их. 
+                Нажмите для этого на значок микрофона, и расскажите о себе, какую 
+                работу вы ищете. Наш ИИ начнет задавать Вам вопросы, и в ходе 
+                диалога Вы получите отличное и качетсвенное резюме!
+              </p>
+            </div>
+          </div>
+
+          <div class="ai-chat">
+            <div class="ai-chat__messages">
+              <p class="message">
+                Сгенерированы базовые требования. Уточните пожалуйста, 
+                насколько важно иметь опыт работы в данной профессии: 
+              </p>
+              <p class="message --ai">
+                Сгенерированы базовые требования. Уточните пожалуйста, 
+                насколько важно иметь опыт работы в данной профессии: 
+              </p>
+              <p class="message">
+                Сгенерированы базовые требования. Уточните пожалуйста, 
+                насколько важно иметь опыт работы в данной профессии: 
+              </p>
+              <p class="message --ai">
+                Сгенерированы базовые требования. Уточните пожалуйста, 
+                насколько важно иметь опыт работы в данной профессии: 
+              </p>
+              <p class="message">
+                Сгенерированы базовые требования. Уточните пожалуйста, 
+                насколько важно иметь опыт работы в данной профессии: 
+              </p>
+              <p class="message --ai">
+                Сгенерированы базовые требования. Уточните пожалуйста, 
+                насколько важно иметь опыт работы в данной профессии: 
+              </p>
+              <p class="message">
+                Сгенерированы базовые требования. Уточните пожалуйста, 
+                насколько важно иметь опыт работы в данной профессии: 
+              </p>
+              <p class="message --ai">
+                Сгенерированы базовые требования. Уточните пожалуйста, 
+                насколько важно иметь опыт работы в данной профессии: 
+              </p>
+              <p class="message">
+                Для нас достаточно иметь опыт в этой или смежной профессии
+              </p>
+              <p class="message --ai">
+                Я понял. А важно ли иметь рекомендации на последнем месте работы?
+              </p>
+            </div>
+
+            <button type="button" class="voice-btn" aria-label="Голосовой ввод">
+              <i class="icon-iconamoon_microphone-fill"></i>
+            </button>
+
+            <input type="text" class="ai-chat__input-txt" placeholder="Здесь уже распознанный текст" readonly>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    @@include('blocks/_footer.html')
+  </div>
+
+  @@include('blocks/_scripts.html')
+</body>
+
+</html>

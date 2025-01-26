@@ -1,0 +1,124 @@
+.acc-gen-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    gap: 10px;
+    background: #F6F6F6;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+  &__label-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    p {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+  
+      i {
+        font-size: 24px;
+      }
+  
+      &.--large {
+        font-size: 20px;
+      }
+    }
+
+    button {
+      display: block;
+      font-size: 24px;
+      line-height: 1;
+
+      i {
+        display: block;
+        transform: rotate(180deg);
+        transition: .4s ease;
+      }
+    }
+  }
+
+  &__label-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #969696;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    li {
+      padding: 24px 16px;
+      background: #FFFFFF;
+      border: 1px solid #D0D0D0;
+      border-radius: 12px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      color: #969696;
+    }
+  }
+
+  &__scroll-wrap {
+    overflow-x: auto;
+  }
+
+  &__table {
+    width: max-content;
+
+    tr {
+
+      &:not(:last-child) {
+        padding-bottom: 8px;
+      }
+    }
+
+    th {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      color: #000000;
+      white-space: nowrap;
+      vertical-align: top;
+
+      &:not(:last-child) {
+        padding-right: 16px;
+      }
+    }
+
+    td {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      color: #969696;
+      padding: 15px 0;
+      width: 90px;
+
+      &:not(:last-child) {
+        padding-right: 16px;
+      }
+    }
+  }
+
+  &.--hidden &__label-title button i {
+    transform: rotate(0deg);
+  }
+  &.--hidden &__dropdown {
+    display: none;
+  }
+}

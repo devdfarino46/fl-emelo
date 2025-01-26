@@ -250,6 +250,26 @@ const Ui = {
     });
   },
 
+  accGenItemInit: function () {
+    document.querySelectorAll('.acc-gen-item').forEach(accGenItem => {
+      const label = accGenItem.querySelector('.acc-gen-item__label');
+
+      label.addEventListener('click', ev => {
+        accGenItem.classList.toggle('--hidden');
+      });
+    });
+  },
+
+  clueBlockInit: function () {
+    document.querySelectorAll('.clue-block').forEach(clueBlock => {
+      if (clueBlock.classList.contains('--allow-hide-740w')) {
+        clueBlock.addEventListener('click', ev => {
+          clueBlock.classList.toggle('--opened');
+        });
+      }
+    })
+  },
+
   init: function () {
     this.langSelectInit();
     this.menuInit();
@@ -259,6 +279,8 @@ const Ui = {
     this.phoneSelectInit();
     this.countrySelectInit();
     this.reviewsInit();
+    this.accGenItemInit();
+    this.clueBlockInit();
   }
 }
 Ui.init();

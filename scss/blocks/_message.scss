@@ -1,0 +1,15 @@
+.message {
+  display: flex;
+  padding: 10px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  font-weight: 300;
+  
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+
+  &.--ai {
+    background: #D0D0D0;
+  }
+}
