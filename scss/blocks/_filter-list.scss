@@ -1,0 +1,27 @@
+.filters-list {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 22px;
+  overflow-y: auto;
+  background: #FFFFFF;
+  border: 1px solid #D0D0D0;
+  border-radius: 5px;
+
+  &__label {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #969696;
+  }
+
+  &__list {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__item {
+  }
+}

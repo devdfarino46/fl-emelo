@@ -36,6 +36,11 @@
         min-height: 100%;
         order: -1;
       }
+      .filters-list {
+        height: 0;
+        min-height: 100%;
+        order: -1;
+      }
     }
 
     @media (max-width: 740px) {
@@ -43,6 +48,10 @@
       flex-direction: column-reverse;
 
       .acc-gen-options {
+        order: unset;
+        height: 474px;
+      }
+      .filters-list {
         order: unset;
         height: 474px;
       }
