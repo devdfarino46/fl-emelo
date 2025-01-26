@@ -1,25 +1,24 @@
 .my-all-data {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 24px;
   background: #FFFFFF;
   border: 1px solid #D0D0D0;
   position: relative;
-  align-items: center;
+  padding: 24px 10px 24px;
+
+  &__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+  }
 
   &>.btn {
-    width: 327px;
-    position: absolute;
-    bottom: 20px;
-
-    @media (max-width: 740px) {
-      width: calc(100% - 28px);
-    }
   }
 
   &>ul {
     max-height: 385px;
-    padding: 24px 10px 75px;
     display: flex;
     flex-direction: column;
     align-self: stretch;

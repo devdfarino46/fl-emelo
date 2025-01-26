@@ -38,6 +38,9 @@
           <div class="cab-appnt__data-cell">
             <div class="my-data-block">
               <p class="my-data-block__title">Мои данные</p>
+              <button type="button" class="btn">
+                <span>Редактировать</span>
+              </button>
               @@include('blocks/_ava.html', {has_profile_image: true})
               <ul class="my-data-block__info">
                 <li>Иван Иванов</li>
@@ -45,11 +48,12 @@
                 <li><i class="icon-ic_outline-email"></i> Example@example</li>
                 <li><i class="icon-solar_globus-broken"></i> Испания</li>
               </ul>
-              <button type="button" class="btn">
-                <span>Редактировать</span>
-              </button>
             </div>
             <div class="my-all-data">
+              <p class="my-all-data__title">Мой профиль</p>
+              <button type="button" class="btn">
+                <span>Создать и редактировать</span>
+              </button>
               <ul>
                 <li>
                   <p>
@@ -127,9 +131,6 @@
                   </ul>
                 </li>
               </ul>
-              <button type="button" class="btn">
-                <span>Создать и редактировать</span>
-              </button>
             </div>
           </div>
 
