@@ -6,7 +6,6 @@ const config = {
   },
   output: {
     filename: '[name].js',
-    library: 'Global'
   },
   module: {
     rules: [

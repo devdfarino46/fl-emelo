@@ -6,7 +6,7 @@ const cleanCSS = require('gulp-clean-css'); // minify css
 const sourceMaps = require('gulp-sourcemaps'); // generate source maps
 const webpack = require('webpack-stream'); // webpack
 const babel = require('gulp-babel'); // babel
-const sassGlob = require('gulp-sass-glob'); // globbing for sass]
+const sassGlob = require('gulp-sass-glob'); // globbing for sass
 const fileInclude = require('gulp-file-include'); // file include
 const fontello = require('gulp-fontello'); // fontello
 

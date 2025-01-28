@@ -1,9 +1,8 @@
-node_modules/**/*
+node_modules/
 package-lock.json
-css/**/*
-js/**/*
+
+css/
+fontello/**/*
+js/
 *.html
 !html/**/*.html
-fontello/**/*
-*.zip
-*.rar
