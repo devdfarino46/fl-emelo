@@ -27,5 +27,15 @@
   color: #0077FF
 }
 
+.map {
+  width: 344px;
+  height: 258px;
+  background: url(../img/basemap.webp) top left;
+
+  @media (max-width: 740px) {
+    width: 300px;
+  }
+}
+
 @import 'ui/*';
 @import 'blocks/*';

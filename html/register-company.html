@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('blocks/_head.html')
+
+<body>
+  <div class="wrapper">
+
+    @@include('blocks/_header.html')
+
+    @@include('blocks/_menu.html')
+
+    @@include('blocks/_ier-nav.html')
+
+    <main class="page page-reg-company reg-comp">
+      <div class="reg-comp__container">
+        <form action="#" class="reg-comp__form">
+          <div class="ava-upload">
+            <input type="file" accept=".jpg, .jpeg, .png, .webp">
+            <div class="ava-upload__image">
+              <i class="icon-material-symbols_download-sharp"></i>
+              <img src="img/avas/2.webp" alt="" width="200" height="175">
+            </div>
+            <div class="ava-upload__btns">
+              <button type="button" class="ava-upload__img-btn btn --shadow-white">
+                <span>Загрузить</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="reg-comp__main-wrap">
+            <div class="reg-comp__row">
+              <div class="form-input">
+                <input type="text" placeholder="Название">
+              </div>
+              <div class="form-input">
+                <input type="email" placeholder="E-mail администратора">
+              </div>
+            </div>
+            <div class="form-input">
+              <input type="text" placeholder="Сайт">
+            </div>
+            <div class="reg-comp__row-radio">
+              <label class="form-radio-label">
+                <div>
+                  <input type="checkbox">
+                </div>
+                <span>Является филиалом</span>
+              </label>
+              <div class="form-select">
+                <div class="form-input">
+                  <button type="button" aria-label="Выбрать страну">
+                    <i class="icon-ic_round-arrow-drop-down"></i>
+                  </button>
+                  <input type="text" placeholder="Страна" readonly>
+                </div>
+                <ul class="form-select__dropdown">
+                  <li class="form-select__item">
+                    <i class="icon-bi_geo"></i>
+                    <span>Соединеные штаты Америки</span>
+                  </li>
+                  <li class="form-select__item">
+                    <i class="icon-bi_geo"></i>
+                    <span>Испания</span>
+                  </li>
+                  <li class="form-select__item">
+                    <i class="icon-bi_geo"></i>
+                    <span>Франция</span>
+                  </li>
+                  <li class="form-select__item">
+                    <i class="icon-bi_geo"></i>
+                    <span>Италия</span>
+                  </li>
+                  <li class="form-select__item">
+                    <i class="icon-bi_geo"></i>
+                    <span>Албания</span>
+                  </li>
+                  <li class="form-select__item">
+                    <i class="icon-bi_geo"></i>
+                    <span>Казахстан</span>
+                  </li>
+                  <li class="form-select__item">
+                    <i class="icon-bi_geo"></i>
+                    <span>Чехия</span>
+                  </li>
+                  <li class="form-select__item">
+                    <i class="icon-bi_geo"></i>
+                    <span>Польша</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="form-select">
+                <div class="form-input">
+                  <button type="button" aria-label="Выбрать страну">
+                    <i class="icon-ic_round-arrow-drop-down"></i>
+                  </button>
+                  <input type="text" placeholder="Pepsi" readonly>
+                </div>
+                <ul class="form-select__dropdown">
+                  <li class="form-select__item">
+                    <span>Pepsi 1</span>
+                  </li>
+                  <li class="form-select__item">
+                    <span>Pepsi 2</span>
+                  </li>
+                  <li class="form-select__item">
+                    <span>Pepsi 3</span>
+                  </li>
+                  <li class="form-select__item">
+                    <span>Pepsi 1</span>
+                  </li>
+                  <li class="form-select__item">
+                    <span>Pepsi 2</span>
+                  </li>
+                  <li class="form-select__item">
+                    <span>Pepsi 3</span>
+                  </li>
+                  <li class="form-select__item">
+                    <span>Pepsi 1</span>
+                  </li>
+                  <li class="form-select__item">
+                    <span>Pepsi 2</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="form-input">
+              <input type="email" placeholder="Сферы деятельности">
+            </div>
+            <div class="reg-comp__row-label-column">
+              <p class="rec-comp__row-label">Основное место нахождения</p>
+              <div class="reg-comp__row-label-inputs">
+                <div class="form-select">
+                  <div class="form-input">
+                    <button type="button" aria-label="Выбрать страну">
+                      <i class="icon-ic_round-arrow-drop-down"></i>
+                    </button>
+                    <input type="text" placeholder="Страна" readonly>
+                  </div>
+                  <ul class="form-select__dropdown">
+                    <li class="form-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Соединеные штаты Америки</span>
+                    </li>
+                    <li class="form-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Испания</span>
+                    </li>
+                    <li class="form-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Франция</span>
+                    </li>
+                    <li class="form-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Италия</span>
+                    </li>
+                    <li class="form-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Албания</span>
+                    </li>
+                    <li class="form-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Казахстан</span>
+                    </li>
+                    <li class="form-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Чехия</span>
+                    </li>
+                    <li class="form-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Польша</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="form-select">
+                  <div class="form-input">
+                    <button type="button" aria-label="Выбрать регион">
+                      <i class="icon-ic_round-arrow-drop-down"></i>
+                    </button>
+                    <input type="text" placeholder="Регион" readonly>
+                  </div>
+                  <ul class="form-select__dropdown">
+                    <li class="form-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Санкт-Петербург</span>
+                    </li>
+                    <li class="form-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Москва</span>
+                    </li>
+                    <li class="form-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Казань</span>
+                    </li>
+                    <li class="form-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Новосибирск</span>
+                    </li>
+                    <li class="form-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Екатеринбург</span>
+                    </li>
+                    <li class="form-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Сочи</span>
+                    </li>
+                    <li class="form-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Владивосток</span>
+                    </li>
+                    <li class="form-select__item">
+                      <i class="icon-bi_geo"></i>
+                      <span>Краснодар</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="reg-comp__row-label-column">
+              <p class="reg-comp__row-label">На карте</p>
+              <div class="map"></div>
+            </div>
+            <button class="reg-comp__save-btn btn">
+              <span>Сохранить</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    @@include('blocks/_footer.html')
+  </div>
+
+  @@include('blocks/_scripts.html')
+</body>
+
+</html>

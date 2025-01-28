@@ -1,0 +1,52 @@
+.form-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  cursor: pointer;
+
+  div {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    background: #E7E7E7;
+    border-radius: 40px;
+    transition: .3s ease;
+    cursor: pointer;
+    
+    input {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    &::before {
+      cursor: pointer;
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #FCC40F;
+      opacity: 0;
+      border-radius: 10px;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      transition: .3s ease;
+    }
+
+    &:has(input:checked) {
+      background: white;
+    }
+    &:has(input:checked)::before {
+      opacity: 1;
+    }
+  }
+
+  span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+}

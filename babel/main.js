@@ -88,12 +88,12 @@ const Ui = {
       const cameraBtn = avaUpload.querySelector('.ava-upload__camera-btn');
       const img = avaUpload.querySelector('.ava-upload__image img');
 
-      imgBtn.addEventListener('click', (ev) => {
+      if (imgBtn) imgBtn.addEventListener('click', (ev) => {
         input.removeAttribute('capture');
         input.click();
       });
 
-      cameraBtn.addEventListener('click', (ev) => {
+      if (cameraBtn) cameraBtn.addEventListener('click', (ev) => {
         input.setAttribute('capture', 'camera');
         input.click();
       })
@@ -205,10 +205,10 @@ const Ui = {
     });
   },
 
-  countrySelectInit: function () {
-    document.querySelectorAll('.country-select').forEach(select => {
-      const input = select.querySelector('.country-select .form-input');
-      const items = select.querySelectorAll('.country-select__item');
+  formSelectInit: function () {
+    document.querySelectorAll('.form-select').forEach(select => {
+      const input = select.querySelector('.form-select .form-input');
+      const items = select.querySelectorAll('.form-select__item');
 
       input.addEventListener('click', () => {
         select.classList.toggle('--opened');
@@ -277,7 +277,7 @@ const Ui = {
     this.avaUploadInit();
     this.dateSelectInit();
     this.phoneSelectInit();
-    this.countrySelectInit();
+    this.formSelectInit();
     this.reviewsInit();
     this.accGenItemInit();
     this.clueBlockInit();

@@ -1,0 +1,90 @@
+.reg-comp {
+  padding: 75px 0;
+
+  @media (max-width: 740px) {
+    padding: 48px 0;
+  }
+
+  &__container {}
+
+  &__form {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+
+    .ava-upload {}
+
+    @media (max-width: 940px) {
+      flex-direction: column;
+      align-items: stretch;
+
+      .ava-upload {
+        align-self: center;
+      }
+    }
+  }
+
+  &__main-wrap {
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+
+    @media (max-width: 940px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__row-radio {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: auto 1fr 1fr;
+
+    @media (max-width: 740px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__row-label-column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .map {
+      @media (max-width: 940px) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  &__row-label-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  &__row-label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+
+  &__save-btn {
+    align-self: flex-start;
+    min-width: 200px;
+
+    @media (max-width: 940px) {
+      align-self: center;
+    }
+  }
+}
