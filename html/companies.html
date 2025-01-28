@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('blocks/_head.html')
+
+<body>
+  <div class="wrapper">
+
+    @@include('blocks/_header.html')
+
+    @@include('blocks/_menu.html')
+
+    @@include('blocks/_ier-nav.html')
+
+    <main class="page page-companies">
+      <div class="page-companies__container">
+        <ul class="page-companies__list">
+          <li class="company-litem">
+            <a href="#"></a>
+            @@include('blocks/_ava.html')
+            <div class="company-litem__text-wrap">
+              <p class="company-litem__title">Такси - быстро как ветер</p>
+              <p class="company-litem__address">Мадрид, Испания</p>
+            </div>
+          </li>
+          <li class="company-litem">
+            <a href="#"></a>
+            @@include('blocks/_ava.html')
+            <div class="company-litem__text-wrap">
+              <p class="company-litem__title">Такси - быстро как ветер</p>
+              <p class="company-litem__address">Мадрид, Испания</p>
+            </div>
+          </li>
+        </ul>
+        <button class="page-companies__btn btn">
+          <span>Создать новую</span>
+        </button>
+      </div>
+    </main>
+
+    @@include('blocks/_footer.html')
+  </div>
+
+  @@include('blocks/_scripts.html')
+</body>
+
+</html>
