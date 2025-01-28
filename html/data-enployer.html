@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('blocks/_head.html')
+
+<body>
+  <div class="wrapper">
+
+    @@include('blocks/_header.html')
+
+    @@include('blocks/_menu.html')
+
+    @@include('blocks/_ier-nav.html')
+
+    <main class="page page-data-employer data-empl">
+      <div class="data-empl__container">
+        <form action="#" class="data-empl__form">
+          <div class="data-empl__inputs-wrap">
+            @@include('blocks/_date-select.html')
+            <div class="form-input">
+              <input type="text" placeholder="Петров">
+            </div>
+            <div class="form-input">
+              <input type="text" placeholder="Иван">
+            </div>
+            <div class="form-input">
+              <input type="text" placeholder="Роль в компании">
+            </div>
+          </div>
+          <button type="submit" class="data-empl__save-btn btn">
+            <span>Сохранить</span>
+          </button>
+        </form>
+      </div>
+    </main>
+
+    @@include('blocks/_footer.html')
+  </div>
+
+  @@include('blocks/_scripts.html')
+</body>
+
+</html>

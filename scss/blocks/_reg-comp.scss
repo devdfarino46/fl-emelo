@@ -70,6 +70,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
+
+    .form-select:nth-child(1) {
+      --drop-left: 0;
+      --drop-right: auto;
+    }
   }
 
   &__row-label {

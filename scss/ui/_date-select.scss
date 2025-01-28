@@ -1,11 +1,14 @@
 .date-select {
   position: relative;
+  --drop-left: auto;
+  --drop-right: 0;
 
   &__dropdown {
     position: absolute;
     z-index: 999;
     top: calc(100% + 5px);
-    right: 0;
+    left: var(--drop-left);
+    right: var(--drop-right);
     display: flex;
     flex-direction: column;
     background: #FFFFFF;
