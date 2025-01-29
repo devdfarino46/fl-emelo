@@ -31,4 +31,16 @@
     line-height: 19px;
     color: #969696;
   }
+
+  &__info-list {
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+    li {
+      font-size: 14px;
+      color: #969696;
+    }
+  }
 }

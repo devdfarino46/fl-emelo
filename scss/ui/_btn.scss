@@ -82,6 +82,28 @@
     }
   }
 
+  &.--green-yellow {
+    background: #739f31;
+    color: white;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background: rgb(45, 124, 58);
+      }
+    }
+  }
+
+  &.--red {
+    background: #ef4738;
+    color: white;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background: #8e2a21;
+      }
+    }
+  }
+
   &.--white {
     background: #FFFFFF;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);

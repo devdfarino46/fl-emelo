@@ -3,6 +3,7 @@ const Ui = {
     document.querySelectorAll('.lang-select').forEach((langSelect) => {
       const label = langSelect.querySelector('.lang-select__label');
       const selects = langSelect.querySelectorAll('.lang-select__select');
+      const hiddenInput = langSelect.querySelector('input[type="hidden"]');
 
       label.addEventListener('click', () => {
         langSelect.classList.add('--active');
@@ -10,7 +11,12 @@ const Ui = {
       
       selects.forEach((select) => {
         select.addEventListener('click', () => {
+          const value = select.getAttribute('data-value');
           langSelect.classList.remove('--active');
+
+          hiddenInput.value = value;
+          label.querySelector('span').textContent = select.textContent;
+          langSelect.submit();
         });
       });
 

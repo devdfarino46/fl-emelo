@@ -29,6 +29,9 @@
     }
   }
 
+  &.--accepted &__top::before {
+    background: #739f31;
+  }
   &.--vacancie &__top::before {
     content: none;
   }
@@ -52,6 +55,24 @@
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+  }
+
+  &__tags {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-left: 16px;
+
+    li {
+      font-size: 14px;
+      color: #878787;
+    }
+
+    @media (max-width: 740px) {
+      flex-direction: column;
+      padding-left: 16px;
+    }
   }
 
   &__price {
@@ -83,6 +104,21 @@
       flex-direction: column;
       align-items: stretch;
       justify-content: unset;
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+
+  &__btn-wrap {
+    display: flex;
+    align-self: flex-start;
+    gap: 16px;
+
+    @media (max-width: 740px) {
+      flex-direction: column;
+      width: 100%;
     }
   }
 
