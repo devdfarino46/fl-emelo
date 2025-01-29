@@ -270,6 +270,85 @@ const Ui = {
     })
   },
 
+  formEditingInit: function () {
+    document.querySelectorAll('.form-editing').forEach(formEditing => {
+      const items = formEditing.querySelectorAll('.form-editing__item');
+
+      // Удалить этот участок
+      formEditing.addEventListener('submit', ev => {
+        ev.preventDefault();
+      });
+      // ....
+
+      items.forEach(item => {
+        const input = item.querySelector('textarea');
+        const btn = item.querySelector('button');
+
+        item.addEventListener('click', ev => {
+          input.focus();
+          item.classList.add('--edit');
+          input.removeAttribute('readonly');
+        });
+
+        document.addEventListener('click', ev => {
+          if (!ev.composedPath().includes(item)) {
+            item.classList.remove('--edit');
+            input.setAttribute('readonly', 'readonly');
+          }
+        });
+
+        btn.addEventListener('click', ev => {
+          item.classList.remove('--edit');
+          input.setAttribute('readonly', 'readonly');
+        });
+      });
+    });
+  },
+
+  dragDropTableInit: function() {
+    document.querySelectorAll('.drag-drop-table').forEach(table => {
+      const rows = table.querySelectorAll('tr[draggable="true"]');
+      const hiddenInput = table.querySelector('input[type="hidden"]');
+      
+      rows.forEach(row => {
+        row.addEventListener('dragstart', ev => {
+          ev.dataTransfer.setData('text/plain', ev.target.id);
+          ev.target.classList.add('dragging');
+        });
+
+        row.addEventListener('dragover', ev => {
+          ev.preventDefault();
+          const draggingRow = document.querySelector('.dragging');
+          const targetRow = ev.target.closest('tr');
+
+          if (targetRow && targetRow !== draggingRow) {
+            const tbody = table.querySelector('tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr[draggable="true"]'));
+            const draggingIndex = rows.indexOf(draggingRow);
+            const targetIndex = rows.indexOf(targetRow);
+
+            if (draggingIndex < targetIndex) {
+              tbody.insertBefore(draggingRow, targetRow.nextSibling);
+              
+            } else {
+              tbody.insertBefore(draggingRow, targetRow);
+            }
+          }
+        });
+
+        row.addEventListener('dragend', ev => {
+          ev.target.classList.remove('dragging');
+
+          const rows = table.querySelectorAll('tr[draggable="true"]');
+          const orders = Array.from(rows).map(row => row.dataset.id).join(',');
+          fetch(`?order=${orders}`, {
+            method: table.dataset.method,
+          });
+        });
+      });
+    });
+  },
+
   init: function () {
     this.langSelectInit();
     this.menuInit();
@@ -281,6 +360,8 @@ const Ui = {
     this.reviewsInit();
     this.accGenItemInit();
     this.clueBlockInit();
+    this.formEditingInit();
+    this.dragDropTableInit();
   }
 }
 Ui.init();

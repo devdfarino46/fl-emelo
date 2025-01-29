@@ -1,0 +1,43 @@
+.table {
+  overflow-x: auto;
+  border: 1px solid #D0D0D0;
+  border-radius: 5px;
+  
+  table {
+    border-spacing: 0;
+    width: 100%;
+  }
+
+  tr[draggable="true"] {
+    cursor: grab;
+    user-select: none;
+    transition: .3s ease;
+
+    &.dragging {
+      opacity: 0;
+    }
+  }
+  
+  th, td {
+    padding: 10px 24px;
+    white-space: nowrap;
+    max-width: 300px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: left;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    background: #F6F6F6;
+  }
+
+  th {
+    background: #FFFFFF;
+  }
+
+  td>a {
+    color: #0077FF;
+    cursor: pointer;
+  }
+}
