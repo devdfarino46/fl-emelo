@@ -1,0 +1,27 @@
+.price-list {
+  padding: 75px 0;
+
+  @media (max-width: 940px) {
+    padding: 48px 0;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 940px+32;
+
+    @media (max-width: 940px) {
+      grid-template-columns: 1fr 1fr;
+
+      .price-card:nth-child(2) {
+        order: 1;
+      }
+    }
+
+    @media (max-width: 740px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

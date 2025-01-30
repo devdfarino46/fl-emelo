@@ -1,0 +1,46 @@
+.price-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 22px;
+  background: #FFFFFF;
+  border: 1px solid #D0D0D0;
+  border-radius: 5px;
+
+  &__title {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+  }
+
+  &__list {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+
+    li {
+      padding: 10px 0px;
+      border-bottom: 1px solid #F6F6F6;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: #969696;
+    }
+  }
+
+  &__price {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+    margin-top: 48px;
+  }
+
+  .btn {
+    margin-top: 24px;
+  }
+}
