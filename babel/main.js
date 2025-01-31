@@ -278,34 +278,35 @@ const Ui = {
 
   formEditingInit: function () {
     document.querySelectorAll('.form-editing').forEach(formEditing => {
-      const items = formEditing.querySelectorAll('.form-editing__item');
+      const dataAction = formEditing.dataset.action;
+      const dataMethod = formEditing.dataset.method;
 
-      // Удалить этот участок
-      formEditing.addEventListener('submit', ev => {
-        ev.preventDefault();
-      });
-      // ....
+      const input = formEditing.querySelector('textarea');
+      const btn = formEditing.querySelector('button');
+      
 
-      items.forEach(item => {
-        const input = item.querySelector('textarea');
-        const btn = item.querySelector('button');
-
-        item.addEventListener('click', ev => {
+      formEditing.addEventListener('click', ev => {
+        if (!ev.composedPath().includes(btn)) {
           input.focus();
-          item.classList.add('--edit');
+          formEditing.classList.add('--edit');
           input.removeAttribute('readonly');
-        });
+        }
+      });
 
-        document.addEventListener('click', ev => {
-          if (!ev.composedPath().includes(item)) {
-            item.classList.remove('--edit');
-            input.setAttribute('readonly', 'readonly');
-          }
-        });
-
-        btn.addEventListener('click', ev => {
-          item.classList.remove('--edit');
+      document.addEventListener('click', ev => {
+        if (!ev.composedPath().includes(formEditing)) {
+          formEditing.classList.remove('--edit');
           input.setAttribute('readonly', 'readonly');
+        }
+      });
+
+      btn.addEventListener('click', ev => {
+        formEditing.classList.remove('--edit');
+        input.setAttribute('readonly', 'readonly');
+
+        fetch(dataAction, {
+          method: dataMethod,
+          body: input.value
         });
       });
     });

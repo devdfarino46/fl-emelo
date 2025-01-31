@@ -22,10 +22,13 @@
     }
    }
 
-   .form-editing {
+   &__form-editings {
     margin-top: 48px;
     width: 100%;
     max-width: 568px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 
     @media (max-width: 940px) {
       align-self: center;
