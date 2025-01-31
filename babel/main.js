@@ -357,28 +357,34 @@ const Ui = {
 
   diagramPieInit: function () {
     document.querySelectorAll('.diagram-pie').forEach(diagram => {
-      const segments = diagram.querySelectorAll('.diagram-pie__segments div');
-      const segmentStrokes = diagram.querySelectorAll('.diagram-pie__segment-strokes div');
-      const legendStrokes = diagram.querySelectorAll('.diagram-pie__legend-strokes div');
-      const segmentLabels = diagram.querySelectorAll('.diagram-pie__segment-labels div');
-      console.log(segmentStrokes);
+      const segmentsDivs = diagram.querySelectorAll('.diagram-pie__segments div');
+      const segmentStrokes = diagram.querySelector('.diagram-pie__segment-strokes');
+      const legendStrokes = diagram.querySelector('.diagram-pie__legend-strokes');
+      const segmentLabels = diagram.querySelector('.diagram-pie__segment-labels');
 
-      const total = Array.from(segments).reduce((acc, segment) => acc + Number(segment.dataset.num), 0);
+      const total = Array.from(segmentsDivs).reduce((acc, segment) => acc + Number(segment.dataset.num), 0);
       
-      Array.from(segments).reduce((acc, segment, index) => {
-        const dataNum = Number(segment.dataset.num);
-        const dataColor = segment.dataset.color;
+      Array.from(segmentsDivs).reduce((acc, segmentsDiv, index) => {
+        const dataNum = Number(segmentsDiv.dataset.num);
+        const dataColor = segmentsDiv.dataset.color;
+        const dataLabel = segmentsDiv.dataset.label;
+
+        const segmentStrokesDiv = segmentStrokes.appendChild(document.createElement('div'));
+        const legendStrokesDiv = legendStrokes.appendChild(document.createElement('div'));
+        const segmentLabelsDiv = segmentLabels.appendChild(document.createElement('div'));
+        const segmentLabelsDivSpan = segmentLabelsDiv.appendChild(document.createElement('span'));
+
+        segmentLabelsDivSpan.textContent = dataLabel;
 
         const percent = dataNum / total * 100;
         console.log(acc + percent / 2);
         
-        
-        segment.style.background = `conic-gradient(${dataColor} ${percent}% 0, transparent 0 0)`;
-        segment.style.transform = `rotate(${360 * acc / 100}deg)`;
-        segmentStrokes[index].style.transform = `rotate(${360 * acc / 100}deg)`;
-        legendStrokes[index].style.transform = `rotate(${360 * (acc + percent / 2) / 100}deg)`;
-        segmentLabels[index].style.transform = `rotate(${360 * (acc + percent / 2) / 100}deg)`;
-        segmentLabels[index].querySelector('span').style.transform = 
+        segmentsDiv.style.background = `conic-gradient(${dataColor} ${percent}% 0, transparent 0 0)`;
+        segmentsDiv.style.transform = `rotate(${360 * acc / 100}deg)`;
+        segmentStrokesDiv.style.transform = `rotate(${360 * acc / 100}deg)`;
+        legendStrokesDiv.style.transform = `rotate(${360 * (acc + percent / 2) / 100}deg)`;
+        segmentLabelsDiv.style.transform = `rotate(${360 * (acc + percent / 2) / 100}deg)`;
+        segmentLabelsDivSpan.style.transform = 
           `translate(-50%, -150%) rotate(-${360 * (acc + percent / 2) / 100}deg)`;
 
         return acc + percent;
