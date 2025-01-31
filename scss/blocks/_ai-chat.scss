@@ -15,6 +15,24 @@
     max-height: 532px;
   }
 
+  .tip-block {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  &__top-btn-wrap {
+    display: grid;
+    width: 100%;
+    margin-bottom: 20px;
+    grid-template-columns: 180px 1fr;
+    gap: 24px;
+
+    @media (max-width: 740px) {
+      flex-direction: column;
+      display: flex;
+    }
+  }
+
   &__messages {
     display: flex;
     flex-direction: column;
@@ -57,5 +75,34 @@
     color: #000000;
     margin-top: 20px;
     max-width: 530px;
+  }
+
+  &__bottom-btn {
+    width: 100%;
+    max-width: 294px;
+    margin-top: 20px;
+
+    @media (max-width: 740px) {
+      max-width: none;
+    }
+  }
+
+  &.--variant2 {
+    height: auto;
+
+    @media (max-width: 940px) {
+      max-height: none;
+    }
+  
+    @media (max-width: 740px) {
+      max-height: none;
+    }
+  }
+  &.--variant2 &__input-txt {
+    max-width: none;
+  }
+  &.--variant2 &__messages {
+    max-height: 400px;
+    min-height: 400px;
   }
 }

@@ -34,6 +34,18 @@ const Ui = {
     });
   },
 
+  btnInit: function () {
+    document.querySelectorAll('.btn').forEach(btn => {
+      if (btn.classList.contains('--add-file')) {
+        const input = btn.querySelector('input[type="file"]');
+
+        btn.addEventListener('click', () => {
+          input.click();
+        });
+      }
+    });
+  },
+
   menuInit: function () {
     const openMenuBtn = document.querySelector('.header .menu-btn');
 
@@ -392,6 +404,23 @@ const Ui = {
     });
   },
 
+  formRadioParentInit: function () {
+    document.querySelectorAll('.form-radio-parent').forEach((formRadioLabel) => {
+      const radios = formRadioLabel.querySelectorAll('.form-radio-label');
+      
+      radios.forEach((radio) => {
+        console.log(radio);
+        
+        radio.addEventListener('click', () => {
+          radios.forEach((r) => {
+            r.querySelector('input').checked = false;
+          });
+          radio.querySelector('input').checked = true;
+        });
+      })
+    });
+  },
+
   candidatesSectionInit: function () {
     document.querySelectorAll('.candidates-section').forEach((candatesSection) => {
       const candidateItems = candatesSection.querySelectorAll('.candidate-item');
@@ -414,6 +443,7 @@ const Ui = {
   },
 
   init: function () {
+    this.btnInit();
     this.langSelectInit();
     this.menuInit();
     this.authFormInit();
@@ -428,6 +458,7 @@ const Ui = {
     this.dragDropTableInit();
     this.diagramPieInit();
     this.candidatesSectionInit();
+    this.formRadioParentInit();
   }
 }
 Ui.init();

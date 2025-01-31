@@ -114,4 +114,18 @@
       }
     }
   }
+
+  &.--add-file input {
+    display: none;
+  }
+
+  &.--white-solid {
+    background: #FFFFFF;;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background: #E7E7E7;
+      }
+    }
+  }
 }

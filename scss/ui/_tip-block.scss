@@ -26,4 +26,15 @@
     line-height: 115%;
     color: #000000;
   }
+
+  &.--adapt {
+    @media (max-width: 740px) {
+      flex-direction: column;
+    }
+  }
+  &.adapt &__text-wrap {
+    @media (max-width: 740px) {
+      width: 100%;
+    }
+  }
 }
