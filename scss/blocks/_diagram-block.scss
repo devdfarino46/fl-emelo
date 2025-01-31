@@ -1,0 +1,49 @@
+.diagram-block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  &__labels {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 10px;
+    background: #F6F6F6;
+    border-radius: 12px;
+  }
+
+  &__labels-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+
+  &__labels-list {
+    display: flex;
+    flex-direction: column;
+
+    li {
+      gap: 8px;
+      display: flex;
+      align-items: center;
+
+      i {
+        display: block;
+        width: 12px;
+        height: 12px;
+      }
+
+      span {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #969696;
+      }
+    }
+  }
+
+  &__diagram {
+    align-self: center;
+  }
+}

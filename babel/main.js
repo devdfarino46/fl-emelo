@@ -364,7 +364,7 @@ const Ui = {
 
       const total = Array.from(segmentsDivs).reduce((acc, segment) => acc + Number(segment.dataset.num), 0);
       
-      Array.from(segmentsDivs).reduce((acc, segmentsDiv, index) => {
+      Array.from(segmentsDivs).reduce((acc, segmentsDiv) => {
         const dataNum = Number(segmentsDiv.dataset.num);
         const dataColor = segmentsDiv.dataset.color;
         const dataLabel = segmentsDiv.dataset.label;
@@ -377,7 +377,6 @@ const Ui = {
         segmentLabelsDivSpan.textContent = dataLabel;
 
         const percent = dataNum / total * 100;
-        console.log(acc + percent / 2);
         
         segmentsDiv.style.background = `conic-gradient(${dataColor} ${percent}% 0, transparent 0 0)`;
         segmentsDiv.style.transform = `rotate(${360 * acc / 100}deg)`;
@@ -389,6 +388,27 @@ const Ui = {
 
         return acc + percent;
       }, 0);
+    });
+  },
+
+  candidatesSectionInit: function () {
+    document.querySelectorAll('.candidates-section').forEach((candatesSection) => {
+      const candidateItems = candatesSection.querySelectorAll('.candidate-item');
+      const candidatesTabs = candatesSection.querySelectorAll('.candidates-tab');
+
+      candidateItems.forEach((candidateItem, index) => {
+        candidateItem.addEventListener('click', () => {
+          candidateItems.forEach((item) => {
+            item.classList.remove('--choosed');
+          });
+          candidatesTabs.forEach((tab) => {
+            tab.classList.remove('--choosed');
+          });
+
+          candidateItem.classList.add('--choosed');
+          if (candidatesTabs[index]) candidatesTabs[index].classList.add('--choosed');
+        });
+      });
     });
   },
 
@@ -406,6 +426,7 @@ const Ui = {
     this.formEditingInit();
     this.dragDropTableInit();
     this.diagramPieInit();
+    this.candidatesSectionInit();
   }
 }
 Ui.init();
