@@ -355,6 +355,37 @@ const Ui = {
     });
   },
 
+  diagramPieInit: function () {
+    document.querySelectorAll('.diagram-pie').forEach(diagram => {
+      const segments = diagram.querySelectorAll('.diagram-pie__segments div');
+      const segmentStrokes = diagram.querySelectorAll('.diagram-pie__segment-strokes div');
+      const legendStrokes = diagram.querySelectorAll('.diagram-pie__legend-strokes div');
+      const segmentLabels = diagram.querySelectorAll('.diagram-pie__segment-labels div');
+      console.log(segmentStrokes);
+
+      const total = Array.from(segments).reduce((acc, segment) => acc + Number(segment.dataset.num), 0);
+      
+      Array.from(segments).reduce((acc, segment, index) => {
+        const dataNum = Number(segment.dataset.num);
+        const dataColor = segment.dataset.color;
+
+        const percent = dataNum / total * 100;
+        console.log(acc + percent / 2);
+        
+        
+        segment.style.background = `conic-gradient(${dataColor} ${percent}% 0, transparent 0 0)`;
+        segment.style.transform = `rotate(${360 * acc / 100}deg)`;
+        segmentStrokes[index].style.transform = `rotate(${360 * acc / 100}deg)`;
+        legendStrokes[index].style.transform = `rotate(${360 * (acc + percent / 2) / 100}deg)`;
+        segmentLabels[index].style.transform = `rotate(${360 * (acc + percent / 2) / 100}deg)`;
+        segmentLabels[index].querySelector('span').style.transform = 
+          `translate(-50%, -150%) rotate(-${360 * (acc + percent / 2) / 100}deg)`;
+
+        return acc + percent;
+      }, 0);
+    });
+  },
+
   init: function () {
     this.langSelectInit();
     this.menuInit();
@@ -368,6 +399,7 @@ const Ui = {
     this.clueBlockInit();
     this.formEditingInit();
     this.dragDropTableInit();
+    this.diagramPieInit();
   }
 }
 Ui.init();
