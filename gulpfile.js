@@ -10,39 +10,62 @@ const sassGlob = require('gulp-sass-glob'); // globbing for sass
 const fileInclude = require('gulp-file-include'); // file include
 const fontello = require('gulp-fontello'); // fontello
 
-// Browsersync init
+const ROOT_PATH = './';
+const PATHES = {
+  browserSync: {
+    server: ROOT_PATH,
+  },
+  html: {
+    src: ROOT_PATH + 'html/**/*.html',
+    dest: ROOT_PATH
+  },
+  scss: {
+    src: ROOT_PATH + 'scss/**/*.scss',
+    dest: ROOT_PATH + 'css/'
+  },
+  js: {
+    src: ROOT_PATH + 'babel/**/*.js',
+    dest: ROOT_PATH + 'js/'
+  },
+  fontello: {
+    src: ROOT_PATH + 'fontello.json',
+    dest: ROOT_PATH + 'fontello/'
+  }
+}
+
 function _bs() {
   browserSync.init({
-    // proxy: 'localhost/',
-    // port: 80,
-    server: './',
+    server: PATHES.browserSync.server,
     open: false
   });
 }
 
-// Whatching
 function _whatching() {
-  gulp.watch(['html/**/*.html'], _html);
-  gulp.watch('scss/**/*.scss', _sass);
-  gulp.watch(['babel/**/*.js'], _js);
-  gulp.watch(['fontello.json'], _fontello);
+  gulp.watch(PATHES.html.src, _html);
+  gulp.watch(PATHES.scss.src, _sass);
+  gulp.watch(PATHES.js.src, _js);
+  gulp.watch(PATHES.fontello.src, _fontello);
 }
 
 function _html() {
+  const date = new Date();
+  const time = `${date.getFullYear()}.${date.getMonth() + 1}.${date.getDate()} ${date.getHours()}:${date.getMinutes()} (Minsk)`;
 
-  return gulp.src(['html/*.html'])
+  return gulp.src(PATHES.html.src)
     .pipe(fileInclude({
       prefix: '@@',
       basepath: '@file',
-      context: require('./html-vars.js')
+      context: {
+        class: "",
+        versiontime: time,
+      }
     }))
-    .pipe(gulp.dest('.'))
+    .pipe(gulp.dest(PATHES.html.dest))
     .pipe(browserSync.stream());
 }
 
-// SCSS to CSS
 function _sass() {
-  return gulp.src(["scss/**/*.scss"])
+  return gulp.src(PATHES.scss.src)
     .pipe(sourceMaps.init())
     .pipe(sassGlob())
     .pipe(sass({
@@ -54,24 +77,24 @@ function _sass() {
       format: 'beautify'
     }))
     .pipe(sourceMaps.write('.'))
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest(PATHES.scss.dest))
     .pipe(browserSync.stream());
 }
 
 function _js() {
-  return gulp.src('babel/**/*.js')
+  return gulp.src(PATHES.js.src)
     .pipe(sourceMaps.init())
     .pipe(babel())
-    .pipe(webpack(require('./webpack.config.js')))
+    .pipe(webpack(require('./webpack.config')))
     .pipe(sourceMaps.write('.'))
-    .pipe(gulp.dest('js'))
+    .pipe(gulp.dest(PATHES.js.dest))
     .pipe(browserSync.stream());
 }
 
 function _fontello() {
-  return gulp.src('fontello.json')
+  return gulp.src(PATHES.fontello.src)
     .pipe(fontello())
-    .pipe(gulp.dest('fontello'))
+    .pipe(gulp.dest(PATHES.fontello.dest))
     .pipe(browserSync.stream());
 }
 
@@ -90,9 +113,3 @@ exports.css = _sass;
 exports.js = _js;
 exports.html = _html;
 exports.fontello = _fontello;
-
-exports.test = function (cb) {
-  console.log(process.argv);
-  
-  cb();
-}
