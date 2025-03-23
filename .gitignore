@@ -2,3 +2,6 @@ css/
 js/
 *.html
 !html/**/*.html
+
+dist/
+.publish/
