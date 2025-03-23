@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+  <title>Univero</title>
+
+  <link rel="stylesheet" href="fontello/css/fontello.css"
+    media="print"
+    onload="this.media='all'">
+  <script src="libs/swiper.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css"
+    media="print"
+    onload="this.media='all'">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+  <div class="header__container">
+    <a href="#" class="logo">
+      <i class="icon-logo"></i>
+      <span>Univero</span>
+    </a>
+
+    <button type="button" class="menu-btn" aria-label="Открыть меню">
+      <i class="icon-ic_baseline-menu"></i>
+    </button>
+
+    <nav class="nav">
+      <a href="#" class="nav__link">Ход поиска</a>
+      <a href="#" class="nav__link">Мои данные</a>
+      <a href="#" class="nav__link">Мой профиль</a>
+      <a href="#" class="nav__link">Помощь</a>
+    </nav>
+
+    <div class="header__cta">
+      <form action="#" class="lang-select" method="get">
+  <input type="hidden" name="lang">
+  <button type="button" class="lang-select__label">
+    <i class="icon-solar_globus-broken"></i>
+    <span>Русский</span>
+  </button>
+  <ul class="lang-select__dropdown">
+    <li class="lang-select__select" data-value="1">Русский</li>
+    <li class="lang-select__select" data-value="2">Английский</li>
+    <li class="lang-select__select" data-value="3">Испанский</li>
+    <li class="lang-select__select" data-value="4">Итальянский</li>
+    <li class="lang-select__select" data-value="5">Мексиканский</li>
+  </ul>
+</form>
+
+      
+      <button type="button" class="btn">
+        <span>Войти</span>
+      </button>
+      
+      
+    </div>
+  </div>
+</header>
+
+    <div class="menu">
+  <div class="menu__container">
+    <button type="button" class="menu-btn" aria-label="Открыть меню">
+      <i class="icon-ix_cancel"></i>
+    </button>
+
+    <nav class="nav --row">
+      <a href="#" class="nav__link">Ход поиска</a>
+      <a href="#" class="nav__link">Мои данные</a>
+      <a href="#" class="nav__link">Мой профиль</a>
+      <a href="#" class="nav__link">Помощь</a>
+    </nav>
+
+    <form action="#" class="lang-select" method="get">
+  <input type="hidden" name="lang">
+  <button type="button" class="lang-select__label">
+    <i class="icon-solar_globus-broken"></i>
+    <span>Русский</span>
+  </button>
+  <ul class="lang-select__dropdown">
+    <li class="lang-select__select" data-value="1">Русский</li>
+    <li class="lang-select__select" data-value="2">Английский</li>
+    <li class="lang-select__select" data-value="3">Испанский</li>
+    <li class="lang-select__select" data-value="4">Итальянский</li>
+    <li class="lang-select__select" data-value="5">Мексиканский</li>
+  </ul>
+</form>
+  </div>
+</div>
+
+    <div class="ier-nav">
+  <div class="ier-nav__container">
+    <a href="#" class="">Главная</a>
+    <a href="#" class="--showed">Регистрация</a>
+    <a href="#" class="--hidden">...</a>
+    <a href="#" class="--choosed">Для соискателей</a>
+  </div>
+</div>
+
+    <main class="page page-data-employer data-empl">
+      <div class="data-empl__container">
+        <form action="#" class="data-empl__form">
+          <div class="data-empl__inputs-wrap">
+            <div class="date-select">
+  <div class="form-input">
+    <button type="button" aria-label="Выбрать дату">
+      <i class="icon-ic_round-arrow-drop-down"></i>
+    </button>
+    <input type="text" placeholder="Мг" readonly>
+  </div>
+  <div class="date-select__dropdown">
+    <div class="date-select__dropdown-tabs">
+      <button type="button" class="tab-btn --choosed">
+        <span>Дата</span>
+      </button>
+      <button type="button" class="tab-btn">
+        <span>Месяц</span>
+      </button>
+      <button type="button" class="tab-btn">
+        <span>Год</span>
+      </button>
+    </div>
+    <ul class="date-select__list --choosed">
+      
+      <li class="date-select__item" data-value="31" data-category="day">31</li>
+      
+      <li class="date-select__item" data-value="30" data-category="day">30</li>
+      
+      <li class="date-select__item" data-value="29" data-category="day">29</li>
+      
+      <li class="date-select__item" data-value="28" data-category="day">28</li>
+      
+      <li class="date-select__item" data-value="27" data-category="day">27</li>
+      
+      <li class="date-select__item" data-value="26" data-category="day">26</li>
+      
+      <li class="date-select__item" data-value="25" data-category="day">25</li>
+      
+      <li class="date-select__item" data-value="24" data-category="day">24</li>
+      
+      <li class="date-select__item" data-value="23" data-category="day">23</li>
+      
+      <li class="date-select__item" data-value="22" data-category="day">22</li>
+      
+      <li class="date-select__item" data-value="21" data-category="day">21</li>
+      
+      <li class="date-select__item" data-value="20" data-category="day">20</li>
+      
+      <li class="date-select__item" data-value="19" data-category="day">19</li>
+      
+      <li class="date-select__item" data-value="18" data-category="day">18</li>
+      
+      <li class="date-select__item" data-value="17" data-category="day">17</li>
+      
+      <li class="date-select__item" data-value="16" data-category="day">16</li>
+      
+      <li class="date-select__item" data-value="15" data-category="day">15</li>
+      
+      <li class="date-select__item" data-value="14" data-category="day">14</li>
+      
+      <li class="date-select__item" data-value="13" data-category="day">13</li>
+      
+      <li class="date-select__item" data-value="12" data-category="day">12</li>
+      
+      <li class="date-select__item" data-value="11" data-category="day">11</li>
+      
+      <li class="date-select__item" data-value="10" data-category="day">10</li>
+      
+      <li class="date-select__item" data-value="9" data-category="day">9</li>
+      
+      <li class="date-select__item" data-value="8" data-category="day">8</li>
+      
+      <li class="date-select__item" data-value="7" data-category="day">7</li>
+      
+      <li class="date-select__item" data-value="6" data-category="day">6</li>
+      
+      <li class="date-select__item" data-value="5" data-category="day">5</li>
+      
+      <li class="date-select__item" data-value="4" data-category="day">4</li>
+      
+      <li class="date-select__item" data-value="3" data-category="day">3</li>
+      
+      <li class="date-select__item" data-value="2" data-category="day">2</li>
+      
+      <li class="date-select__item" data-value="1" data-category="day">1</li>
+      
+    </ul>
+    <ul class="date-select__list">
+      <li class="date-select__item" data-value="01" data-category="month">Январь</li>
+      <li class="date-select__item" data-value="02" data-category="month">Февраль</li>
+      <li class="date-select__item" data-value="03" data-category="month">Март</li>
+      <li class="date-select__item" data-value="04" data-category="month">Апрель</li>
+      <li class="date-select__item" data-value="05" data-category="month">Май</li>
+      <li class="date-select__item" data-value="06" data-category="month">Июнь</li>
+      <li class="date-select__item" data-value="07" data-category="month">Июль</li>
+      <li class="date-select__item" data-value="08" data-category="month">Август</li>
+      <li class="date-select__item" data-value="09" data-category="month">Сентябрь</li>
+      <li class="date-select__item" data-value="10" data-category="month">Октябрь</li>
+      <li class="date-select__item" data-value="11" data-category="month">Ноябрь</li>
+      <li class="date-select__item" data-value="12" data-category="month">Декабрь</li>
+    </ul>
+    <ul class="date-select__list">
+      
+      <li class="date-select__item" data-value="2024" data-category="year">2024</li>
+      
+      <li class="date-select__item" data-value="2023" data-category="year">2023</li>
+      
+      <li class="date-select__item" data-value="2022" data-category="year">2022</li>
+      
+      <li class="date-select__item" data-value="2021" data-category="year">2021</li>
+      
+      <li class="date-select__item" data-value="2020" data-category="year">2020</li>
+      
+      <li class="date-select__item" data-value="2019" data-category="year">2019</li>
+      
+      <li class="date-select__item" data-value="2018" data-category="year">2018</li>
+      
+      <li class="date-select__item" data-value="2017" data-category="year">2017</li>
+      
+      <li class="date-select__item" data-value="2016" data-category="year">2016</li>
+      
+      <li class="date-select__item" data-value="2015" data-category="year">2015</li>
+      
+      <li class="date-select__item" data-value="2014" data-category="year">2014</li>
+      
+      <li class="date-select__item" data-value="2013" data-category="year">2013</li>
+      
+      <li class="date-select__item" data-value="2012" data-category="year">2012</li>
+      
+      <li class="date-select__item" data-value="2011" data-category="year">2011</li>
+      
+      <li class="date-select__item" data-value="2010" data-category="year">2010</li>
+      
+      <li class="date-select__item" data-value="2009" data-category="year">2009</li>
+      
+      <li class="date-select__item" data-value="2008" data-category="year">2008</li>
+      
+      <li class="date-select__item" data-value="2007" data-category="year">2007</li>
+      
+      <li class="date-select__item" data-value="2006" data-category="year">2006</li>
+      
+      <li class="date-select__item" data-value="2005" data-category="year">2005</li>
+      
+      <li class="date-select__item" data-value="2004" data-category="year">2004</li>
+      
+      <li class="date-select__item" data-value="2003" data-category="year">2003</li>
+      
+      <li class="date-select__item" data-value="2002" data-category="year">2002</li>
+      
+      <li class="date-select__item" data-value="2001" data-category="year">2001</li>
+      
+      <li class="date-select__item" data-value="2000" data-category="year">2000</li>
+      
+      <li class="date-select__item" data-value="1999" data-category="year">1999</li>
+      
+      <li class="date-select__item" data-value="1998" data-category="year">1998</li>
+      
+      <li class="date-select__item" data-value="1997" data-category="year">1997</li>
+      
+      <li class="date-select__item" data-value="1996" data-category="year">1996</li>
+      
+      <li class="date-select__item" data-value="1995" data-category="year">1995</li>
+      
+      <li class="date-select__item" data-value="1994" data-category="year">1994</li>
+      
+      <li class="date-select__item" data-value="1993" data-category="year">1993</li>
+      
+      <li class="date-select__item" data-value="1992" data-category="year">1992</li>
+      
+      <li class="date-select__item" data-value="1991" data-category="year">1991</li>
+      
+      <li class="date-select__item" data-value="1990" data-category="year">1990</li>
+      
+      <li class="date-select__item" data-value="1989" data-category="year">1989</li>
+      
+      <li class="date-select__item" data-value="1988" data-category="year">1988</li>
+      
+      <li class="date-select__item" data-value="1987" data-category="year">1987</li>
+      
+      <li class="date-select__item" data-value="1986" data-category="year">1986</li>
+      
+      <li class="date-select__item" data-value="1985" data-category="year">1985</li>
+      
+      <li class="date-select__item" data-value="1984" data-category="year">1984</li>
+      
+      <li class="date-select__item" data-value="1983" data-category="year">1983</li>
+      
+      <li class="date-select__item" data-value="1982" data-category="year">1982</li>
+      
+      <li class="date-select__item" data-value="1981" data-category="year">1981</li>
+      
+      <li class="date-select__item" data-value="1980" data-category="year">1980</li>
+      
+      <li class="date-select__item" data-value="1979" data-category="year">1979</li>
+      
+      <li class="date-select__item" data-value="1978" data-category="year">1978</li>
+      
+      <li class="date-select__item" data-value="1977" data-category="year">1977</li>
+      
+      <li class="date-select__item" data-value="1976" data-category="year">1976</li>
+      
+      <li class="date-select__item" data-value="1975" data-category="year">1975</li>
+      
+      <li class="date-select__item" data-value="1974" data-category="year">1974</li>
+      
+      <li class="date-select__item" data-value="1973" data-category="year">1973</li>
+      
+      <li class="date-select__item" data-value="1972" data-category="year">1972</li>
+      
+      <li class="date-select__item" data-value="1971" data-category="year">1971</li>
+      
+      <li class="date-select__item" data-value="1970" data-category="year">1970</li>
+      
+      <li class="date-select__item" data-value="1969" data-category="year">1969</li>
+      
+      <li class="date-select__item" data-value="1968" data-category="year">1968</li>
+      
+      <li class="date-select__item" data-value="1967" data-category="year">1967</li>
+      
+      <li class="date-select__item" data-value="1966" data-category="year">1966</li>
+      
+      <li class="date-select__item" data-value="1965" data-category="year">1965</li>
+      
+      <li class="date-select__item" data-value="1964" data-category="year">1964</li>
+      
+      <li class="date-select__item" data-value="1963" data-category="year">1963</li>
+      
+      <li class="date-select__item" data-value="1962" data-category="year">1962</li>
+      
+      <li class="date-select__item" data-value="1961" data-category="year">1961</li>
+      
+      <li class="date-select__item" data-value="1960" data-category="year">1960</li>
+      
+      <li class="date-select__item" data-value="1959" data-category="year">1959</li>
+      
+      <li class="date-select__item" data-value="1958" data-category="year">1958</li>
+      
+      <li class="date-select__item" data-value="1957" data-category="year">1957</li>
+      
+      <li class="date-select__item" data-value="1956" data-category="year">1956</li>
+      
+      <li class="date-select__item" data-value="1955" data-category="year">1955</li>
+      
+      <li class="date-select__item" data-value="1954" data-category="year">1954</li>
+      
+      <li class="date-select__item" data-value="1953" data-category="year">1953</li>
+      
+      <li class="date-select__item" data-value="1952" data-category="year">1952</li>
+      
+      <li class="date-select__item" data-value="1951" data-category="year">1951</li>
+      
+      <li class="date-select__item" data-value="1950" data-category="year">1950</li>
+      
+      <li class="date-select__item" data-value="1949" data-category="year">1949</li>
+      
+      <li class="date-select__item" data-value="1948" data-category="year">1948</li>
+      
+      <li class="date-select__item" data-value="1947" data-category="year">1947</li>
+      
+      <li class="date-select__item" data-value="1946" data-category="year">1946</li>
+      
+      <li class="date-select__item" data-value="1945" data-category="year">1945</li>
+      
+      <li class="date-select__item" data-value="1944" data-category="year">1944</li>
+      
+      <li class="date-select__item" data-value="1943" data-category="year">1943</li>
+      
+      <li class="date-select__item" data-value="1942" data-category="year">1942</li>
+      
+      <li class="date-select__item" data-value="1941" data-category="year">1941</li>
+      
+      <li class="date-select__item" data-value="1940" data-category="year">1940</li>
+      
+      <li class="date-select__item" data-value="1939" data-category="year">1939</li>
+      
+      <li class="date-select__item" data-value="1938" data-category="year">1938</li>
+      
+      <li class="date-select__item" data-value="1937" data-category="year">1937</li>
+      
+      <li class="date-select__item" data-value="1936" data-category="year">1936</li>
+      
+      <li class="date-select__item" data-value="1935" data-category="year">1935</li>
+      
+      <li class="date-select__item" data-value="1934" data-category="year">1934</li>
+      
+      <li class="date-select__item" data-value="1933" data-category="year">1933</li>
+      
+      <li class="date-select__item" data-value="1932" data-category="year">1932</li>
+      
+      <li class="date-select__item" data-value="1931" data-category="year">1931</li>
+      
+      <li class="date-select__item" data-value="1930" data-category="year">1930</li>
+      
+      <li class="date-select__item" data-value="1929" data-category="year">1929</li>
+      
+      <li class="date-select__item" data-value="1928" data-category="year">1928</li>
+      
+      <li class="date-select__item" data-value="1927" data-category="year">1927</li>
+      
+      <li class="date-select__item" data-value="1926" data-category="year">1926</li>
+      
+      <li class="date-select__item" data-value="1925" data-category="year">1925</li>
+      
+      <li class="date-select__item" data-value="1924" data-category="year">1924</li>
+      
+      <li class="date-select__item" data-value="1923" data-category="year">1923</li>
+      
+      <li class="date-select__item" data-value="1922" data-category="year">1922</li>
+      
+      <li class="date-select__item" data-value="1921" data-category="year">1921</li>
+      
+    </ul>
+
+    <button type="button" class="date-select__accept-btn btn">
+      <span>Применить</span>
+    </button>
+  </div>
+</div>
+            <div class="form-input">
+              <input type="text" placeholder="Петров">
+            </div>
+            <div class="form-input">
+              <input type="text" placeholder="Иван">
+            </div>
+            <div class="form-input"> 
+              <input type="text" placeholder="Роль в компании">
+            </div>
+          </div>
+          <button type="submit" class="data-empl__save-btn btn">
+            <span>Сохранить</span>
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__top">
+      <a href="#" class="logo">
+        <span>Univero</span>
+      </a>
+      <nav class="nav">
+        <a href="#" class="nav__link">Ход поиска</a>
+        <a href="#" class="nav__link">Мои данные</a>
+        <a href="#" class="nav__link">Мой профиль</a>
+        <a href="#" class="nav__link">Помощь</a>
+      </nav>
+
+      <div class="footer__socials-wrap">
+        <p class="footer__socials-label">Наши социальные сети</p>
+        <div class="footer__socials">
+          <a href="#" class="social --white">
+            <i class="icon-entypo-social_vk-with-circle"></i>
+          </a>
+          <a href="#" class="social --white">
+            <i class="icon-devicon_google"></i>
+          </a>
+          <a href="#" class="social --white">
+            <i class="icon-logos_telegram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom-links">
+      <a href="#">Уведомление о конфиденциальности</a>
+      <a href="#">Условия использования</a>
+    </div>
+  </div>
+</footer>
+  </div>
+
+  <script src="libs/lazysizes.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

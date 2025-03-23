@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+  <title>Univero</title>
+
+  <link rel="stylesheet" href="fontello/css/fontello.css"
+    media="print"
+    onload="this.media='all'">
+  <script src="libs/swiper.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css"
+    media="print"
+    onload="this.media='all'">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+  <div class="header__container">
+    <a href="#" class="logo">
+      <i class="icon-logo"></i>
+      <span>Univero</span>
+    </a>
+
+    <button type="button" class="menu-btn" aria-label="Открыть меню">
+      <i class="icon-ic_baseline-menu"></i>
+    </button>
+
+    <nav class="nav">
+      <a href="#" class="nav__link">Ход поиска</a>
+      <a href="#" class="nav__link">Мои данные</a>
+      <a href="#" class="nav__link">Мой профиль</a>
+      <a href="#" class="nav__link">Помощь</a>
+    </nav>
+
+    <div class="header__cta">
+      <form action="#" class="lang-select" method="get">
+  <input type="hidden" name="lang">
+  <button type="button" class="lang-select__label">
+    <i class="icon-solar_globus-broken"></i>
+    <span>Русский</span>
+  </button>
+  <ul class="lang-select__dropdown">
+    <li class="lang-select__select" data-value="1">Русский</li>
+    <li class="lang-select__select" data-value="2">Английский</li>
+    <li class="lang-select__select" data-value="3">Испанский</li>
+    <li class="lang-select__select" data-value="4">Итальянский</li>
+    <li class="lang-select__select" data-value="5">Мексиканский</li>
+  </ul>
+</form>
+
+      
+      <button type="button" class="btn">
+        <span>Войти</span>
+      </button>
+      
+      
+    </div>
+  </div>
+</header>
+
+    <div class="menu">
+  <div class="menu__container">
+    <button type="button" class="menu-btn" aria-label="Открыть меню">
+      <i class="icon-ix_cancel"></i>
+    </button>
+
+    <nav class="nav --row">
+      <a href="#" class="nav__link">Ход поиска</a>
+      <a href="#" class="nav__link">Мои данные</a>
+      <a href="#" class="nav__link">Мой профиль</a>
+      <a href="#" class="nav__link">Помощь</a>
+    </nav>
+
+    <form action="#" class="lang-select" method="get">
+  <input type="hidden" name="lang">
+  <button type="button" class="lang-select__label">
+    <i class="icon-solar_globus-broken"></i>
+    <span>Русский</span>
+  </button>
+  <ul class="lang-select__dropdown">
+    <li class="lang-select__select" data-value="1">Русский</li>
+    <li class="lang-select__select" data-value="2">Английский</li>
+    <li class="lang-select__select" data-value="3">Испанский</li>
+    <li class="lang-select__select" data-value="4">Итальянский</li>
+    <li class="lang-select__select" data-value="5">Мексиканский</li>
+  </ul>
+</form>
+  </div>
+</div>
+
+    <div class="ier-nav">
+  <div class="ier-nav__container">
+    <a href="#" class="">Главная</a>
+    <a href="#" class="--showed">Регистрация</a>
+    <a href="#" class="--hidden">...</a>
+    <a href="#" class="--choosed">Для соискателей</a>
+  </div>
+</div>
+
+    <main class="page page-create-vacancy create-vacancy">
+      <div class="create-vacancy__container">
+        <div class="create-vacancy__results">
+          <p class="create-vacancy__results-title">Вакансия</p>
+          <ul class="create-vacancy__results-list">
+            <li class="form-editing" data-action="#" data-method="POST">
+              <p>Описание</p>
+              <textarea readonly>Компании Эх прокачу требуется капитан маломерного судна. </textarea>
+              <i class="icon-ic_round-edit"></i>
+              <button type="submit" class="btn --black">
+                <span>Сохранить</span>
+              </button>
+            </li>
+            <li class="form-editing" data-action="#" data-method="POST">
+              <p>Задачи</p>
+              <textarea readonly>аапуцп</textarea>
+              <i class="icon-ic_round-edit"></i>
+              <button type="submit" class="btn --black">
+                <span>Сохранить</span>
+              </button>
+            </li>
+            <li class="form-editing" data-action="#" data-method="POST">
+              <p>Требования</p>
+              <textarea readonly>аапуцп </textarea>
+              <i class="icon-ic_round-edit"></i>
+              <button type="submit" class="btn --black">
+                <span>Сохранить</span>
+              </button>
+            </li>
+            <li class="form-editing" data-action="#" data-method="POST">
+              <p>Дополнительные преимущества</p>
+              <textarea readonly>аапуцп </textarea>
+              <i class="icon-ic_round-edit"></i>
+              <button type="submit" class="btn --black">
+                <span>Сохранить</span>
+              </button>
+            </li>
+            <li class="form-editing" data-action="#" data-method="POST">
+              <p>Ключевые навыки</p>
+              <textarea readonly>аапуцп </textarea>
+              <i class="icon-ic_round-edit"></i>
+              <button type="submit" class="btn --black">
+                <span>Сохранить</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="ai-chat --variant2">
+          <div class="tip-block --adapt">
+            <img src="data:," data-src="img/tip.webp" alt="" class="lazyload" width="36" height="48">
+            <div class="tip-block__text-wrap">
+              <p class="tip-block__text">
+                Задайте требования удобным для вас способом: <br>
+                - Продиктуйте или запишите видео с требованиями,  <br>
+                - Приложите файл с готовыми требованиями, например должностными инструкциями <br>
+                - Так же вы можете написать требования общими словами. <br>
+                Empleo создаст детальные требования к кандидату и *при необходимости* задаст дополнительные вопросы .
+              </p>
+            </div>
+          </div>
+
+          <div class="ai-chat__top-btn-wrap">
+            <button type="button" class="btn --add-file">
+              <input type="file" name="">
+              <span>Добавить файл</span>
+            </button>
+            <button type="button" class="btn --white-solid">
+              <span>Текст с требованием</span>
+            </button>
+          </div>
+          <div class="ai-chat__messages">
+            <p class="message">
+              Сгенерированы базовые требования. Уточните пожалуйста, 
+              насколько важно иметь опыт работы в данной профессии: 
+            </p>
+            <p class="message --ai">
+              Сгенерированы базовые требования. Уточните пожалуйста, 
+              насколько важно иметь опыт работы в данной профессии: 
+            </p>
+            <p class="message">
+              Сгенерированы базовые требования. Уточните пожалуйста, 
+              насколько важно иметь опыт работы в данной профессии: 
+            </p>
+            <p class="message --ai">
+              Сгенерированы базовые требования. Уточните пожалуйста, 
+              насколько важно иметь опыт работы в данной профессии: 
+            </p>
+            <p class="message">
+              Сгенерированы базовые требования. Уточните пожалуйста, 
+              насколько важно иметь опыт работы в данной профессии: 
+            </p>
+            <p class="message --ai">
+              Сгенерированы базовые требования. Уточните пожалуйста, 
+              насколько важно иметь опыт работы в данной профессии: 
+            </p>
+            <p class="message">
+              Сгенерированы базовые требования. Уточните пожалуйста, 
+              насколько важно иметь опыт работы в данной профессии: 
+            </p>
+            <p class="message --ai">
+              Сгенерированы базовые требования. Уточните пожалуйста, 
+              насколько важно иметь опыт работы в данной профессии: 
+            </p>
+            <p class="message">
+              Для нас достаточно иметь опыт в этой или смежной профессии
+            </p>
+            <p class="message --ai">
+              Я понял. А важно ли иметь рекомендации на последнем месте работы?
+            </p>
+          </div>
+
+          <button type="button" class="voice-btn" aria-label="Голосовой ввод">
+            <i class="icon-iconamoon_microphone-fill"></i>
+          </button>
+
+          <input type="text" class="ai-chat__input-txt" placeholder="Здесь уже распознанный текст" readonly>
+
+          <button type="button" class="btn ai-chat__bottom-btn">
+            <span>Создать описание требований</span>
+          </button>
+        </div>
+
+        <form class="create-vacancy__status-wrap">
+          <div class="info-status-block">
+            <p class="info-status-block__label">Статус</p>
+            <div class="info-status-block__content">
+              <p class="info-status-block__tag">Черновик</p>
+              <button type="submit" class="info-status-block__btn btn">
+                <span>Опубликовать</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="vacancy-subform">
+            <button type="button" class="btn --white">
+              <span>Сохранить для других вакансий</span>
+            </button>
+            <div class="form-input">
+              <input type="text" placeholder="Название вакансии">
+            </div>
+            <div class="form-input">
+              <input type="text" placeholder="Название вакансии">
+            </div>
+            <div class="vacancy-subform__map-wrap">
+              <label class="form-radio-label">
+                <div>
+                  <input type="checkbox">
+                </div>
+                <span>Привязать к местоположению</span>
+              </label>
+              <button type="button" class="btn --white">
+                <span>Выбрать область на карте</span>
+              </button>
+              <div class="map"></div>
+            </div>
+
+            <div class="vacancy-subform__requires">
+              <p class="vacancy-subform__requires-title">Требования</p>
+              <div class="vacancy-subform__requires-list form-radio-parent">
+                <label class="form-radio-label">
+                  <div>
+                    <input type="checkbox">
+                  </div>
+                  <span>Выше среднего</span>
+                </label>
+                <label class="form-radio-label">
+                  <div>
+                    <input type="checkbox">
+                  </div>
+                  <span>Средние</span>
+                </label>
+                <label class="form-radio-label">
+                  <div>
+                    <input type="checkbox">
+                  </div>
+                  <span>Ниже среднего</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__top">
+      <a href="#" class="logo">
+        <span>Univero</span>
+      </a>
+      <nav class="nav">
+        <a href="#" class="nav__link">Ход поиска</a>
+        <a href="#" class="nav__link">Мои данные</a>
+        <a href="#" class="nav__link">Мой профиль</a>
+        <a href="#" class="nav__link">Помощь</a>
+      </nav>
+
+      <div class="footer__socials-wrap">
+        <p class="footer__socials-label">Наши социальные сети</p>
+        <div class="footer__socials">
+          <a href="#" class="social --white">
+            <i class="icon-entypo-social_vk-with-circle"></i>
+          </a>
+          <a href="#" class="social --white">
+            <i class="icon-devicon_google"></i>
+          </a>
+          <a href="#" class="social --white">
+            <i class="icon-logos_telegram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom-links">
+      <a href="#">Уведомление о конфиденциальности</a>
+      <a href="#">Условия использования</a>
+    </div>
+  </div>
+</footer>
+  </div>
+
+  <script src="libs/lazysizes.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

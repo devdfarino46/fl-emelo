@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+  <title>Univero</title>
+
+  <link rel="stylesheet" href="fontello/css/fontello.css"
+    media="print"
+    onload="this.media='all'">
+  <script src="libs/swiper.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css"
+    media="print"
+    onload="this.media='all'">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+  <div class="header__container">
+    <a href="#" class="logo">
+      <i class="icon-logo"></i>
+      <span>Univero</span>
+    </a>
+
+    <button type="button" class="menu-btn" aria-label="Открыть меню">
+      <i class="icon-ic_baseline-menu"></i>
+    </button>
+
+    <nav class="nav">
+      <a href="#" class="nav__link">Ход поиска</a>
+      <a href="#" class="nav__link">Мои данные</a>
+      <a href="#" class="nav__link">Мой профиль</a>
+      <a href="#" class="nav__link">Помощь</a>
+    </nav>
+
+    <div class="header__cta">
+      <form action="#" class="lang-select" method="get">
+  <input type="hidden" name="lang">
+  <button type="button" class="lang-select__label">
+    <i class="icon-solar_globus-broken"></i>
+    <span>Русский</span>
+  </button>
+  <ul class="lang-select__dropdown">
+    <li class="lang-select__select" data-value="1">Русский</li>
+    <li class="lang-select__select" data-value="2">Английский</li>
+    <li class="lang-select__select" data-value="3">Испанский</li>
+    <li class="lang-select__select" data-value="4">Итальянский</li>
+    <li class="lang-select__select" data-value="5">Мексиканский</li>
+  </ul>
+</form>
+
+      
+      <button type="button" class="btn">
+        <span>Войти</span>
+      </button>
+      
+      
+    </div>
+  </div>
+</header>
+
+    <div class="menu">
+  <div class="menu__container">
+    <button type="button" class="menu-btn" aria-label="Открыть меню">
+      <i class="icon-ix_cancel"></i>
+    </button>
+
+    <nav class="nav --row">
+      <a href="#" class="nav__link">Ход поиска</a>
+      <a href="#" class="nav__link">Мои данные</a>
+      <a href="#" class="nav__link">Мой профиль</a>
+      <a href="#" class="nav__link">Помощь</a>
+    </nav>
+
+    <form action="#" class="lang-select" method="get">
+  <input type="hidden" name="lang">
+  <button type="button" class="lang-select__label">
+    <i class="icon-solar_globus-broken"></i>
+    <span>Русский</span>
+  </button>
+  <ul class="lang-select__dropdown">
+    <li class="lang-select__select" data-value="1">Русский</li>
+    <li class="lang-select__select" data-value="2">Английский</li>
+    <li class="lang-select__select" data-value="3">Испанский</li>
+    <li class="lang-select__select" data-value="4">Итальянский</li>
+    <li class="lang-select__select" data-value="5">Мексиканский</li>
+  </ul>
+</form>
+  </div>
+</div>
+
+    <div class="ier-nav">
+  <div class="ier-nav__container">
+    <a href="#" class="">Главная</a>
+    <a href="#" class="--showed">Регистрация</a>
+    <a href="#" class="--hidden">...</a>
+    <a href="#" class="--choosed">Для соискателей</a>
+  </div>
+</div>
+
+    <main class="page page-cabinet-employer cab-empl">
+      <div class="cab-empl__container">
+        <div class="company-item-empl">
+          <a href="#" class="ava">
+  
+  
+  <i class="icon-carbon_no-image"></i>
+  
+</a>
+          <div class="company-item-empl__text-wrap">
+            <p class="company-item-empl__title">Доставка как ветер</p>
+            <a href="#" class="company-item-empl__link">smart_delivery@gmail.com</a>
+            <button type="button" class="btn">
+              <span>Управление компанией</span>
+            </button>
+          </div>
+        </div>
+
+        <ul action="#" class="cab-empl__form-editings">
+          <!-- Аналог <form> -->
+          <li class="form-editing" data-action="#" data-method="GET">
+            <p>Сферы деятельности</p>
+            <textarea readonly>Транспорт и логистика &#13;Онлайн доставка</textarea>
+            <i class="icon-ic_round-edit"></i>
+            <button type="button" class="btn --black">
+              <span>Сохранить</span>
+            </button>
+          </li>
+          <li class="form-editing" data-action="#" data-method="POST">
+            <p>Описание для соискателей</p>
+            <textarea readonly>Мы на рынке с 2000 года, уверенно развивающаяся компания в сфере услуг. Стабильная работа ...</textarea>
+            <i class="icon-ic_round-edit"></i>
+            <button type="button" class="btn --black">
+              <span>Сохранить</span>
+            </button>
+          </li>
+          <li class="form-editing" data-action="#" data-method="POST">
+            <p>Договор офферты</p>
+            <textarea readonly>Договор</textarea>
+            <i class="icon-ic_round-edit"></i>
+            <button type="button" class="btn --black">
+              <span>Сохранить</span>
+            </button>
+          </li>
+        </ul>
+
+        <div class="cab-empl__vacancies">
+          <p class="cab-empl__vacancies-title">Вакансии <i>(нажмите и тяните)</i></p>
+          <!-- 
+            data-action-uri заменить на свой
+            запрос отправляется в виде #?order=1,5,2,3,4 - числа - айди строк
+            Метод POST 
+            смотреть в main.js: Ui.dragDropTableInit();
+            или в браузере DevTools->Сеть
+            При перемещении строк автомотически отправляется запрос без перезагрузки страницы
+          -->
+          <div class="drag-drop-table table" data-action-uri="#" data-method="POST">
+            <table>
+              <tr>
+                <th>Название</th>
+                <th >Место</th>
+                <th >Требования</th>
+                <th >Перейти к редактированию</th>
+                <th >Статус</th>
+                <th >Кол-во откликов</th>
+                <th >Посмотреть отклики</th>
+                <th >Эффективность</th>
+              </tr>
+              <tr draggable="true" data-id="1">
+                <td>1 Водитель</td>
+                <td>Москва</td>
+                <td>Наличие ВУ и опыт от 3-х лет</td>
+                <td><a href="#">link</a></td>
+                <td>Опубликовано</td>
+                <td>2</td>
+                <td><a href="#">link</a></td>
+                <td>Средняя (1-3 отклика в неделю)</td>
+              </tr>
+              <tr draggable="true" data-id="2">
+                <td>2 Водитель</td>
+                <td>Москва</td>
+                <td>Наличие ВУ и опыт от 3-х лет</td>
+                <td><a href="#">link</a></td>
+                <td>Опубликовано</td>
+                <td>2</td>
+                <td><a href="#">link</a></td>
+                <td>Средняя (1-3 отклика в неделю)</td>
+              </tr>
+              <tr draggable="true" data-id="3">
+                <td>3 Водитель</td>
+                <td>Москва</td>
+                <td>Наличие ВУ и опыт от 3-х лет</td>
+                <td><a href="#">link</a></td>
+                <td>Опубликовано</td>
+                <td>2</td>
+                <td><a href="#">link</a></td>
+                <td>Средняя (1-3 отклика в неделю)</td>
+              </tr>
+              <tr draggable="true" data-id="4">
+                <td>4 Водитель</td>
+                <td>Москва</td>
+                <td>Наличие ВУ и опыт от 3-х лет</td>
+                <td><a href="#">link</a></td>
+                <td>Опубликовано</td>
+                <td>2</td>
+                <td><a href="#">link</a></td>
+                <td>Средняя (1-3 отклика в неделю)</td>
+              </tr>
+              <tr draggable="true" data-id="5">
+                <td>5 Водитель</td>
+                <td>Москва</td>
+                <td>Наличие ВУ и опыт от 3-х лет</td>
+                <td><a href="#">link</a></td>
+                <td>Опубликовано</td>
+                <td>2</td>
+                <td><a href="#">link</a></td>
+                <td>Средняя (1-3 отклика в неделю)</td>
+              </tr>
+            </table>
+          </div>
+          <button type="button" class="btn">
+            <span>Создать</span>
+          </button>
+        </div>
+
+        <div class="cab-empl__map">
+          <p class="cab-empl__map-label">На карте</p>
+          <div class="map"></div>
+        </div>
+
+        <div class="cab-empl__people">
+          <div class="table">
+            <table>
+              <tr>
+                <th>Название</th>
+                <th>E-mail</th>
+                <th>Phone</th>
+                <th>Name</th>
+                <th>Роль</th>
+              </tr>
+              <tr>
+                <td>User1</td>
+                <td>test.test.ru</td>
+                <td>+7 999 999 99</td>
+                <td>Иван Петр</td>
+                <td>Админ</td>
+              </tr>
+              <tr>
+                <td>User2</td>
+                <td>test.test.ru</td>
+                <td>+7 999 999 99</td>
+                <td>Иван Петр</td>
+                <td>Job finder</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="cab-empl__people-btn-wrap">
+            <button type="button" class="btn">
+              <span>Добавить</span>
+            </button>
+            <button type="button" class="btn --white">
+              <span>Сохранить</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__top">
+      <a href="#" class="logo">
+        <span>Univero</span>
+      </a>
+      <nav class="nav">
+        <a href="#" class="nav__link">Ход поиска</a>
+        <a href="#" class="nav__link">Мои данные</a>
+        <a href="#" class="nav__link">Мой профиль</a>
+        <a href="#" class="nav__link">Помощь</a>
+      </nav>
+
+      <div class="footer__socials-wrap">
+        <p class="footer__socials-label">Наши социальные сети</p>
+        <div class="footer__socials">
+          <a href="#" class="social --white">
+            <i class="icon-entypo-social_vk-with-circle"></i>
+          </a>
+          <a href="#" class="social --white">
+            <i class="icon-devicon_google"></i>
+          </a>
+          <a href="#" class="social --white">
+            <i class="icon-logos_telegram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom-links">
+      <a href="#">Уведомление о конфиденциальности</a>
+      <a href="#">Условия использования</a>
+    </div>
+  </div>
+</footer>
+  </div>
+
+  <script src="libs/lazysizes.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+  <title>Univero</title>
+
+  <link rel="stylesheet" href="fontello/css/fontello.css"
+    media="print"
+    onload="this.media='all'">
+  <script src="libs/swiper.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css"
+    media="print"
+    onload="this.media='all'">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+  <div class="header__container">
+    <a href="#" class="logo">
+      <i class="icon-logo"></i>
+      <span>Univero</span>
+    </a>
+
+    <button type="button" class="menu-btn" aria-label="Открыть меню">
+      <i class="icon-ic_baseline-menu"></i>
+    </button>
+
+    <nav class="nav">
+      <a href="#" class="nav__link">Ход поиска</a>
+      <a href="#" class="nav__link">Мои данные</a>
+      <a href="#" class="nav__link">Мой профиль</a>
+      <a href="#" class="nav__link">Помощь</a>
+    </nav>
+
+    <div class="header__cta">
+      <form action="#" class="lang-select" method="get">
+  <input type="hidden" name="lang">
+  <button type="button" class="lang-select__label">
+    <i class="icon-solar_globus-broken"></i>
+    <span>Русский</span>
+  </button>
+  <ul class="lang-select__dropdown">
+    <li class="lang-select__select" data-value="1">Русский</li>
+    <li class="lang-select__select" data-value="2">Английский</li>
+    <li class="lang-select__select" data-value="3">Испанский</li>
+    <li class="lang-select__select" data-value="4">Итальянский</li>
+    <li class="lang-select__select" data-value="5">Мексиканский</li>
+  </ul>
+</form>
+
+      
+      <button type="button" class="btn">
+        <span>Войти</span>
+      </button>
+      
+      
+    </div>
+  </div>
+</header>
+
+    <div class="menu">
+  <div class="menu__container">
+    <button type="button" class="menu-btn" aria-label="Открыть меню">
+      <i class="icon-ix_cancel"></i>
+    </button>
+
+    <nav class="nav --row">
+      <a href="#" class="nav__link">Ход поиска</a>
+      <a href="#" class="nav__link">Мои данные</a>
+      <a href="#" class="nav__link">Мой профиль</a>
+      <a href="#" class="nav__link">Помощь</a>
+    </nav>
+
+    <form action="#" class="lang-select" method="get">
+  <input type="hidden" name="lang">
+  <button type="button" class="lang-select__label">
+    <i class="icon-solar_globus-broken"></i>
+    <span>Русский</span>
+  </button>
+  <ul class="lang-select__dropdown">
+    <li class="lang-select__select" data-value="1">Русский</li>
+    <li class="lang-select__select" data-value="2">Английский</li>
+    <li class="lang-select__select" data-value="3">Испанский</li>
+    <li class="lang-select__select" data-value="4">Итальянский</li>
+    <li class="lang-select__select" data-value="5">Мексиканский</li>
+  </ul>
+</form>
+  </div>
+</div>
+
+    <div class="ier-nav">
+  <div class="ier-nav__container">
+    <a href="#" class="">Главная</a>
+    <a href="#" class="--showed">Регистрация</a>
+    <a href="#" class="--hidden">...</a>
+    <a href="#" class="--choosed">Для соискателей</a>
+  </div>
+</div>
+
+    <main class="page page-auth">
+      <section class="auth">
+        <div class="auth__container">
+          <div class="auth-form">
+            <div class="auth-form__tabs">
+              <button type="button" class="tab-btn --choosed">
+                <span class="_pc">Для соискателей</span>
+                <span class="_mobile">Соискателям</span>
+              </button>
+              <button type="button" class="tab-btn">
+                <span class="_pc">Для работадателей</span>
+                <span class="_mobile">Работадателям</span>
+              </button>
+            </div>
+
+            <form action="#" class="auth-form__form">
+              <div class="form-input">
+                <input type="text" placeholder="Телефон или E-mail">
+              </div>
+              <div class="form-input">
+                <input type="password" placeholder="Пароль">
+              </div>
+              <button type="submit" class="btn">
+                <span>Продолжить</span>
+              </button>
+              <p class="auth-form__register-note">
+                [Р] Ещё не зарегистрированны? 
+                <a href="javascript:;" class="_register-link">Зарегистрируйтесь</a>
+              </p>
+            </form>
+
+            <div class="auth-form__socials-wrap">
+              <p class="auth-form__socials-label">
+                или авторизуйтесь через соц сети
+              </p>
+              <div class="auth-form__socials">
+                <a href="#" class="social">
+                  <i class="icon-entypo-social_vk-with-circle"></i>
+                </a>
+                <a href="#" class="social">
+                  <i class="icon-devicon_google"></i>
+                </a>
+                <a href="#" class="social">
+                  <i class="icon-ic_outline-facebook"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="register-info --choosed">
+            <p class="register-info__title">
+              Зарегистрировавшись на нашем портале вы сможете
+            </p>
+            <ul class="register-info__list">
+              <li class="register-info__item">
+                <i class="icon-hugeicons_job-search"></i>
+                <p class="register-info__item-label">
+                  Искать работу
+                </p>
+                <p class="register-info__item-text">
+                  Вакансии от проверенных работодателей
+                </p>
+              </li>
+              <li class="register-info__item">
+                <i class="icon-fluent_document-20-regular"></i>
+                <p class="register-info__item-label">
+                  Разместить резюме
+                </p>
+                <p class="register-info__item-text">
+                  Составьте качественное резюме, чтобы быстрее найти работу
+                </p>
+              </li>
+              <li class="register-info__item">
+                <i class="icon-streamline_ai-edit-spark"></i>
+                <p class="register-info__item-label">
+                  Использовать ИИ технологии
+                </p>
+                <p class="register-info__item-text">
+                  Воспользуйтесь силой искуственного интелекта для создания сопроводительного письма
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="register-info">
+            <p class="register-info__title">
+              Зарегистрировавшись на нашем портале вы сможете
+            </p>
+            <ul class="register-info__list">
+              <li class="register-info__item">
+                <i class="icon-hugeicons_job-search"></i>
+                <p class="register-info__item-label">
+                  Искать сотрудников
+                </p>
+                <p class="register-info__item-text">
+                  Ищите сотрудников на свою вакансию
+                </p>
+              </li>
+              <li class="register-info__item">
+                <i class="icon-fluent_document-20-regular"></i>
+                <p class="register-info__item-label">
+                  Разместить вакансию
+                </p>
+                <p class="register-info__item-text">
+                  Использовать ИИ технологии
+                </p>
+              </li>
+              <li class="register-info__item">
+                <i class="icon-streamline_ai-edit-spark"></i>
+                <p class="register-info__item-label">
+                  Использовать ИИ технологии
+                </p>
+                <p class="register-info__item-text">
+                  Воспользуйтесь силой искуственного интелекта для создания вакансии
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="register --hidden">
+        <div class="register__container">
+          <div class="register-form">
+            <p class="register-form__title">Регистрация</p>
+            <form action="#" class="register-form__form">
+              <div class="form-input">
+                <input type="text" placeholder="Имя">
+              </div>
+              <div class="form-input">
+                <input type="text" placeholder="Фамилия">
+              </div>
+              <div class="form-input">
+                <input type="text" placeholder="E-mail">
+              </div>
+              <div class="form-input">
+                <input type="text" placeholder="Телефон">
+              </div>
+              <div class="form-input">
+                <input type="text" placeholder="Пароль">
+              </div>
+              <div class="form-input">
+                <input type="text" placeholder="Подтвердите пароль">
+              </div>
+              <button type="submit" class="btn">
+                <span>Создать учетную запись</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__top">
+      <a href="#" class="logo">
+        <span>Univero</span>
+      </a>
+      <nav class="nav">
+        <a href="#" class="nav__link">Ход поиска</a>
+        <a href="#" class="nav__link">Мои данные</a>
+        <a href="#" class="nav__link">Мой профиль</a>
+        <a href="#" class="nav__link">Помощь</a>
+      </nav>
+
+      <div class="footer__socials-wrap">
+        <p class="footer__socials-label">Наши социальные сети</p>
+        <div class="footer__socials">
+          <a href="#" class="social --white">
+            <i class="icon-entypo-social_vk-with-circle"></i>
+          </a>
+          <a href="#" class="social --white">
+            <i class="icon-devicon_google"></i>
+          </a>
+          <a href="#" class="social --white">
+            <i class="icon-logos_telegram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom-links">
+      <a href="#">Уведомление о конфиденциальности</a>
+      <a href="#">Условия использования</a>
+    </div>
+  </div>
+</footer>
+  </div>
+
+  <script src="libs/lazysizes.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
